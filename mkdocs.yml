@@ -63,6 +63,7 @@ nav:
     - MyBatis: Java/mybatis/MyBatis.pdf
     - MyBatisPlus: Java/mybatis/MyBatisPlus.pdf
     - SpringBoot: Java/SpringBoot/SpringBoot.md
+    - SpringSecurity: Java/SpringSecurity/SpringSecurity.md
     - 设计模式: Java/designpattern/designpattern.md
   - Python: 
     - Python/index.md
