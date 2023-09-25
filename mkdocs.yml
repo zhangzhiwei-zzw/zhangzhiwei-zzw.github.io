@@ -73,6 +73,8 @@ nav:
     - ROS2-rviz2显示模型: ROS2学习/ROS2-rviz2显示模型.md
     - ROS2-URDF建模: ROS2学习/ROS2-URDF建模.md
     - tf2坐标变换工具: ROS2学习/tf2坐标变换工具.md
+    - ROS2课程资料: ROS2学习/ROS2/index.html
+    
   - 博客: 
     - blogs/index.md
     - vue3快速入门: blogs/vue3快速上手.md
@@ -84,7 +86,7 @@ nav:
     - 强化学习基本概念2: blogs/强化学习2(价值学习).md
     - 强化学习基本概念3: blogs/强化学习3(策略学习).md
     - 强化学习基本概念4: blogs/强化学习4(Actor-Critic算法).md
-  - 关于: about.html
+  - 关于: about.md
 
     
     
