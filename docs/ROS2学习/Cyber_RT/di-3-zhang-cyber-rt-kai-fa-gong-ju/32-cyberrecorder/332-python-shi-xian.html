@@ -1,0 +1,1103 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>3.3.2 Python 实现 · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-expandable-chapters/expandable-chapters.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="../../di-2-zhang-cyber-rt-tong-xin-ji-zhi/25-chang-yong-ming-ling.html" />
+    
+    
+    <link rel="prev" href="321-c++-shi-xian.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../../">
+            
+                <a href="../../">
+            
+                    
+                    简介
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="../../chapter1.html">
+            
+                <a href="../../chapter1.html">
+            
+                    
+                    第1章 Cyber RT 概述与环境搭建
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1" data-path="../../chapter1/11-cyber-rt-jian-jie.html">
+            
+                <a href="../../chapter1/11-cyber-rt-jian-jie.html">
+            
+                    
+                    1.1 Cyber RT 简介
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2" data-path="../../chapter1/12-cyber-rt-an-zhuang.html">
+            
+                <a href="../../chapter1/12-cyber-rt-an-zhuang.html">
+            
+                    
+                    1.2 Cyber RT 安装
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.2.1" data-path="../../chapter1/12-cyber-rt-an-zhuang/121-zhun-bei-gong-zuo.html">
+            
+                <a href="../../chapter1/12-cyber-rt-an-zhuang/121-zhun-bei-gong-zuo.html">
+            
+                    
+                    1.2.1 准备工作
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2.2" data-path="../../chapter1/12-cyber-rt-an-zhuang/122-cyber-rt-an-zhuang.html">
+            
+                <a href="../../chapter1/12-cyber-rt-an-zhuang/122-cyber-rt-an-zhuang.html">
+            
+                    
+                    1.2.2 Cyber RT 安装
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2.3" data-path="../../chapter1/12-cyber-rt-an-zhuang/123-ce-shi.html">
+            
+                <a href="../../chapter1/12-cyber-rt-an-zhuang/123-ce-shi.html">
+            
+                    
+                    1.2.3 测试
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3" data-path="../../chapter1/14-cyber-rt-ji-cheng-kai-fa-huan-jing-da-jian.html">
+            
+                <a href="../../chapter1/14-cyber-rt-ji-cheng-kai-fa-huan-jing-da-jian.html">
+            
+                    
+                    1.3 Cyber RT 集成开发环境搭建
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.3.1" data-path="../../chapter1/14-cyber-rt-ji-cheng-kai-fa-huan-jing-da-jian/131-vscode-xia-zai-yu-an-zhuang.html">
+            
+                <a href="../../chapter1/14-cyber-rt-ji-cheng-kai-fa-huan-jing-da-jian/131-vscode-xia-zai-yu-an-zhuang.html">
+            
+                    
+                    1.3.1 Vscode 下载与安装
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3.2" data-path="../../chapter1/14-cyber-rt-ji-cheng-kai-fa-huan-jing-da-jian/132-vscode-cha-jian-de-an-zhuang-yi-ji-shi-yong.html">
+            
+                <a href="../../chapter1/14-cyber-rt-ji-cheng-kai-fa-huan-jing-da-jian/132-vscode-cha-jian-de-an-zhuang-yi-ji-shi-yong.html">
+            
+                    
+                    1.3.2 Vscode 插件的安装以及使用
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.4" data-path="../../chapter1/13-cyber-rt-kuai-su-ti-yan.html">
+            
+                <a href="../../chapter1/13-cyber-rt-kuai-su-ti-yan.html">
+            
+                    
+                    1.4 Cyber RT 快速体验
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.4.1" data-path="../../chapter1/13-cyber-rt-kuai-su-ti-yan/141-cshi-xian-helloworld.html">
+            
+                <a href="../../chapter1/13-cyber-rt-kuai-su-ti-yan/141-cshi-xian-helloworld.html">
+            
+                    
+                    1.4.1 c++实现HelloWorld
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.4.2" data-path="../../chapter1/13-cyber-rt-kuai-su-ti-yan/142-pythonshi-xian-helloworld.html">
+            
+                <a href="../../chapter1/13-cyber-rt-kuai-su-ti-yan/142-pythonshi-xian-helloworld.html">
+            
+                    
+                    1.4.2 Python实现HelloWorld
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.5" data-path="../../chapter1/15-zhun-bei-1-bazel.html">
+            
+                <a href="../../chapter1/15-zhun-bei-1-bazel.html">
+            
+                    
+                    1.5 预备知识——bazel
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.5.1" data-path="../../chapter1/15-zhun-bei-1-bazel/151-bazel-ji-ben-shi-yong-liu-cheng.html">
+            
+                <a href="../../chapter1/15-zhun-bei-1-bazel/151-bazel-ji-ben-shi-yong-liu-cheng.html">
+            
+                    
+                    1.5.1 Bazel使用之基本流程
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.5.2" data-path="../../chapter1/15-zhun-bei-1-bazel/151-bazel.html">
+            
+                <a href="../../chapter1/15-zhun-bei-1-bazel/151-bazel.html">
+            
+                    
+                    1.5.2 Bazel使用之库依赖
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.6" data-path="../../chapter1/16-ben-zhang-xiao-jie.html">
+            
+                <a href="../../chapter1/16-ben-zhang-xiao-jie.html">
+            
+                    
+                    1.6 预备知识——protobuf
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.6.1" data-path="../../chapter1/16-ben-zhang-xiao-jie/161-protoshi-yong-zhi-wen-jian-chuang-jian.html">
+            
+                <a href="../../chapter1/16-ben-zhang-xiao-jie/161-protoshi-yong-zhi-wen-jian-chuang-jian.html">
+            
+                    
+                    1.6.1 proto使用之文件创建
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.6.2" data-path="../../chapter1/16-ben-zhang-xiao-jie/162-protoshi-yong-zhi-du-xie-cao-zuo.html">
+            
+                <a href="../../chapter1/16-ben-zhang-xiao-jie/162-protoshi-yong-zhi-du-xie-cao-zuo.html">
+            
+                    
+                    1.6.2 proto读写之C++实现
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.6.3" data-path="../../chapter1/16-ben-zhang-xiao-jie/163-protodu-xie-zhi-python-shi-xian.html">
+            
+                <a href="../../chapter1/16-ben-zhang-xiao-jie/163-protodu-xie-zhi-python-shi-xian.html">
+            
+                    
+                    1.6.3 proto读写之Python实现
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.7" data-path="../../chapter1/17-ben-zhang-xiao-jie.html">
+            
+                <a href="../../chapter1/17-ben-zhang-xiao-jie.html">
+            
+                    
+                    1.7 本章小结
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="../../di-2-zhang-cyber-rt-tong-xin-ji-zhi.html">
+            
+                <a href="../../di-2-zhang-cyber-rt-tong-xin-ji-zhi.html">
+            
+                    
+                    第2章 Cyber RT 通信机制
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1" data-path="../../di-2-zhang-cyber-rt-tong-xin-ji-zhi/21-hua-ti-tong-xin.html">
+            
+                <a href="../../di-2-zhang-cyber-rt-tong-xin-ji-zhi/21-hua-ti-tong-xin.html">
+            
+                    
+                    2.1 话题通信
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1.1" data-path="../../di-2-zhang-cyber-rt-tong-xin-ji-zhi/21-hua-ti-tong-xin/211cshi-xian.html">
+            
+                <a href="../../di-2-zhang-cyber-rt-tong-xin-ji-zhi/21-hua-ti-tong-xin/211cshi-xian.html">
+            
+                    
+                    2.1.1C++实现
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.1.2" data-path="../../di-2-zhang-cyber-rt-tong-xin-ji-zhi/21-hua-ti-tong-xin/212-pythonshi-xian.html">
+            
+                <a href="../../di-2-zhang-cyber-rt-tong-xin-ji-zhi/21-hua-ti-tong-xin/212-pythonshi-xian.html">
+            
+                    
+                    2.1.2 Python实现
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2" data-path="../../di-2-zhang-cyber-rt-tong-xin-ji-zhi/22-fu-wu-tong-xin.html">
+            
+                <a href="../../di-2-zhang-cyber-rt-tong-xin-ji-zhi/22-fu-wu-tong-xin.html">
+            
+                    
+                    2.2 服务通信
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.2.1" data-path="../../di-2-zhang-cyber-rt-tong-xin-ji-zhi/22-fu-wu-tong-xin/221-cshi-xian.html">
+            
+                <a href="../../di-2-zhang-cyber-rt-tong-xin-ji-zhi/22-fu-wu-tong-xin/221-cshi-xian.html">
+            
+                    
+                    2.2.1 C++实现
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2.2" data-path="../../di-2-zhang-cyber-rt-tong-xin-ji-zhi/22-fu-wu-tong-xin/222-pythonshi-xian.html">
+            
+                <a href="../../di-2-zhang-cyber-rt-tong-xin-ji-zhi/22-fu-wu-tong-xin/222-pythonshi-xian.html">
+            
+                    
+                    2.2.2 Python实现
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3" data-path="../../di-2-zhang-cyber-rt-tong-xin-ji-zhi/23-can-shu.html">
+            
+                <a href="../../di-2-zhang-cyber-rt-tong-xin-ji-zhi/23-can-shu.html">
+            
+                    
+                    2.3 参数
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.3.1" data-path="../../di-2-zhang-cyber-rt-tong-xin-ji-zhi/23-can-shu/231-cshi-xian.html">
+            
+                <a href="../../di-2-zhang-cyber-rt-tong-xin-ji-zhi/23-can-shu/231-cshi-xian.html">
+            
+                    
+                    2.3.1 C++实现
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3.2" data-path="../../di-2-zhang-cyber-rt-tong-xin-ji-zhi/23-can-shu/232-pythonshi-xian.html">
+            
+                <a href="../../di-2-zhang-cyber-rt-tong-xin-ji-zhi/23-can-shu/232-pythonshi-xian.html">
+            
+                    
+                    2.3.2 Python实现
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.4" data-path="../../di-2-zhang-cyber-rt-tong-xin-ji-zhi/24-zu-jian.html">
+            
+                <a href="../../di-2-zhang-cyber-rt-tong-xin-ji-zhi/24-zu-jian.html">
+            
+                    
+                    2.4 组件
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.4.1" data-path="../../di-2-zhang-cyber-rt-tong-xin-ji-zhi/24-zu-jian/241-ji-ben-component-yan-shi.html">
+            
+                <a href="../../di-2-zhang-cyber-rt-tong-xin-ji-zhi/24-zu-jian/241-ji-ben-component-yan-shi.html">
+            
+                    
+                    2.4.1 通用组件演示(上)
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.4.2" data-path="../../di-2-zhang-cyber-rt-tong-xin-ji-zhi/24-zu-jian/242-ji-ben-zu-jian-yan-793a28-4e0b29.html">
+            
+                <a href="../../di-2-zhang-cyber-rt-tong-xin-ji-zhi/24-zu-jian/242-ji-ben-zu-jian-yan-793a28-4e0b29.html">
+            
+                    
+                    2.4.2 通用组件演示(下)
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.4.3" data-path="../../di-2-zhang-cyber-rt-tong-xin-ji-zhi/24-zu-jian/242-shi-jian-zu-jian-yan-shi.html">
+            
+                <a href="../../di-2-zhang-cyber-rt-tong-xin-ji-zhi/24-zu-jian/242-shi-jian-zu-jian-yan-shi.html">
+            
+                    
+                    2.4.3 定时器组件演示
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.5" data-path="../../di-2-zhang-cyber-rt-tong-xin-ji-zhi/25-ben-zhang-xiao-jie.html">
+            
+                <a href="../../di-2-zhang-cyber-rt-tong-xin-ji-zhi/25-ben-zhang-xiao-jie.html">
+            
+                    
+                    2.5 本章小结
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="../../di-3-zhang-cyber-rt-kai-fa-gong-ju.html">
+            
+                <a href="../../di-3-zhang-cyber-rt-kai-fa-gong-ju.html">
+            
+                    
+                    第3章 Cyber RT 开发工具
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.1" data-path="../32-cyberrecorder.html">
+            
+                <a href="../32-cyberrecorder.html">
+            
+                    
+                    3.1 cyber record
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.1.1" data-path="321-c++-shi-xian.html">
+            
+                <a href="321-c++-shi-xian.html">
+            
+                    
+                    3.2.1 C++ 实现
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.4.1.2" data-path="332-python-shi-xian.html">
+            
+                <a href="332-python-shi-xian.html">
+            
+                    
+                    3.3.2 Python 实现
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2" data-path="../../di-2-zhang-cyber-rt-tong-xin-ji-zhi/25-chang-yong-ming-ling.html">
+            
+                <a href="../../di-2-zhang-cyber-rt-tong-xin-ji-zhi/25-chang-yong-ming-ling.html">
+            
+                    
+                    3.2 常用命令
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.3" data-path="../33-ben-zhang-xiao-jie.html">
+            
+                <a href="../33-ben-zhang-xiao-jie.html">
+            
+                    
+                    3.3 本章小结
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="../../zi-65993a-chang-yong-api.html">
+            
+                <a href="../../zi-65993a-chang-yong-api.html">
+            
+                    
+                    第4章 Cyber RT 常用API
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.5.1" data-path="../../zi-65993a-chang-yong-api/1apiwen-dang.html">
+            
+                <a href="../../zi-65993a-chang-yong-api/1apiwen-dang.html">
+            
+                    
+                    4.1 节点相关API
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.2" data-path="../../zi-65993a-chang-yong-api/2shi-jian-xiang-guan-api.html">
+            
+                <a href="../../zi-65993a-chang-yong-api/2shi-jian-xiang-guan-api.html">
+            
+                    
+                    4.2 话题相关API
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.3" data-path="../../zi-65993a-chang-yong-api/3ding-shi-qi-xiang-guan-api.html">
+            
+                <a href="../../zi-65993a-chang-yong-api/3ding-shi-qi-xiang-guan-api.html">
+            
+                    
+                    4.3 服务相关API
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.4" data-path="../../zi-65993a-chang-yong-api/44-can-shu-xiang-guan-api.html">
+            
+                <a href="../../zi-65993a-chang-yong-api/44-can-shu-xiang-guan-api.html">
+            
+                    
+                    4.4 参数相关API
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.5" data-path="../../zi-65993a-chang-yong-api/45-zu-jian-xiang-guan-api.html">
+            
+                <a href="../../zi-65993a-chang-yong-api/45-zu-jian-xiang-guan-api.html">
+            
+                    
+                    4.5 组件相关API
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.6" data-path="../../zi-65993a-chang-yong-api/46-shi-jian-xiang-guan-api.html">
+            
+                <a href="../../zi-65993a-chang-yong-api/46-shi-jian-xiang-guan-api.html">
+            
+                    
+                    4.6 时间相关API
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.7" data-path="../../zi-65993a-chang-yong-api/47-ri-zhi-xiang-guan-api.html">
+            
+                <a href="../../zi-65993a-chang-yong-api/47-ri-zhi-xiang-guan-api.html">
+            
+                    
+                    4.7 日志相关API
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.8" data-path="../../zi-65993a-chang-yong-api/48-record-xiang-guan-api.html">
+            
+                <a href="../../zi-65993a-chang-yong-api/48-record-xiang-guan-api.html">
+            
+                    
+                    4.8 record 相关API
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.9" data-path="../../zi-65993a-chang-yong-api/48-ben-zhang-xiao-jie.html">
+            
+                <a href="../../zi-65993a-chang-yong-api/48-ben-zhang-xiao-jie.html">
+            
+                    
+                    4.9 本章小结
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="../.." >3.3.2 Python 实现</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h3 id="332-python-&#x5B9E;&#x73B0;">3.3.2 Python &#x5B9E;&#x73B0;</h3>
+<h4 id="1&#x5E8F;&#x5217;&#x5316;">1.&#x5E8F;&#x5217;&#x5316;</h4>
+<p>demo_py/tools &#x76EE;&#x5F55;&#x4E0B;&#x65B0;&#x5EFA; Python &#x6587;&#x4EF6; demo01_record_write_py.py&#xFF0C;&#x8F93;&#x5165;&#x5982;&#x4E0B;&#x5185;&#x5BB9;&#xFF1A;</p>
+<pre><code class="lang-py"><span class="hljs-comment">#!/usr/bin/env python3</span>
+
+<span class="hljs-string">&quot;&quot;&quot;  
+    &#x9700;&#x6C42;&#xFF1A;&#x5C06; student &#x6D88;&#x606F;&#x5199;&#x5165;&#x5230;&#x78C1;&#x76D8;&#x6587;&#x4EF6;
+    &#x5B9E;&#x73B0;&#xFF1A;
+        1.&#x521B;&#x5EFA;&#x5199;&#x51FA;&#x5BF9;&#x8C61;&#xFF1B;
+        2.&#x8BBE;&#x7F6E;&#x5199;&#x51FA;&#x53C2;&#x6570;&#xFF1B;
+        3.&#x6253;&#x5F00;&#x6587;&#x4EF6;&#x6D41;&#xFF1B;
+        4.&#x7EC4;&#x7EC7;&#x6D88;&#x606F;&#xFF1B;
+        5.&#x5199;&#x51FA;&#x6D88;&#x606F;&#xFF1B;
+        6.&#x5173;&#x95ED;&#x6587;&#x4EF6;&#x6D41;&#x3002;
+
+
+&quot;&quot;&quot;</span>
+
+<span class="hljs-keyword">from</span> cyber.python.cyber_py3 <span class="hljs-keyword">import</span> cyber
+<span class="hljs-keyword">from</span> cyber.python.cyber_py3 <span class="hljs-keyword">import</span> record
+<span class="hljs-keyword">from</span> cyber.demo_base_proto.student_pb2 <span class="hljs-keyword">import</span> Student
+
+<span class="hljs-keyword">if</span> __name__ == <span class="hljs-string">&quot;__main__&quot;</span>:
+    cyber.init()
+    print(<span class="hljs-string">&quot;record write ....&quot;</span>)
+    <span class="hljs-comment"># 1.&#x521B;&#x5EFA;&#x5199;&#x51FA;&#x5BF9;&#x8C61;&#xFF1B;</span>
+    writer = record.RecordWriter()
+    <span class="hljs-comment"># 2.&#x8BBE;&#x7F6E;&#x5199;&#x51FA;&#x53C2;&#x6570;&#xFF1B;</span>
+    writer.set_size_fileseg(<span class="hljs-number">0</span>)
+    writer.set_intervaltime_fileseg(<span class="hljs-number">0</span>)
+    <span class="hljs-comment"># 3.&#x6253;&#x5F00;&#x6587;&#x4EF6;&#x6D41;&#xFF1B;</span>
+    writer.open(<span class="hljs-string">&quot;/apollo/cyber/demo_py/tools/mytest_py.record&quot;</span>)
+    <span class="hljs-comment"># 4.&#x7EC4;&#x7EC7;&#x6D88;&#x606F;&#xFF1B;</span>
+    stu = Student()
+    stu.name = <span class="hljs-string">&quot;haha&quot;</span>
+    stu.height = <span class="hljs-number">1.78</span>
+    stu.books.append(<span class="hljs-string">&quot;yuwen&quot;</span>)
+    stu.books.append(<span class="hljs-string">&quot;shuxue&quot;</span>)
+    stu.books.append(<span class="hljs-string">&quot;yingyu&quot;</span>)
+    print(<span class="hljs-string">&quot;full name:%s&quot;</span> %stu.DESCRIPTOR.full_name)
+    channel = <span class="hljs-string">&quot;chatter_py&quot;</span>
+    writer.write_channel(channel,<span class="hljs-string">&quot;cyber.demo_base_proto.Student&quot;</span>,<span class="hljs-string">&quot;test....&quot;</span>)
+    <span class="hljs-keyword">for</span> seq <span class="hljs-keyword">in</span> range(<span class="hljs-number">20</span>):
+        stu.age = seq
+        writer.write_message(channel,stu.SerializeToString(),seq)
+
+    <span class="hljs-comment"># 5.&#x5199;&#x51FA;&#x6D88;&#x606F;&#xFF1B;</span>
+    <span class="hljs-comment"># 6.&#x5173;&#x95ED;&#x6587;&#x4EF6;&#x6D41;&#x3002;</span>
+    writer.close()
+</code></pre>
+<p>&#x914D;&#x7F6E;BUILD&#x6587;&#x4EF6;&#x6DFB;&#x52A0;&#x5185;&#x5BB9;&#x5982;&#x4E0B;:</p>
+<pre><code class="lang-py">py_binary(
+    name = <span class="hljs-string">&quot;demo01_record_write_py&quot;</span>,
+    srcs = [<span class="hljs-string">&quot;demo01_record_write_py.py&quot;</span>],
+    deps = [
+        <span class="hljs-string">&quot;//cyber/python/cyber_py3:cyber&quot;</span>,
+        <span class="hljs-string">&quot;//cyber/python/cyber_py3:record&quot;</span>,
+        <span class="hljs-string">&quot;//cyber/demo_base_proto:student_py&quot;</span>
+    ] 
+
+)
+</code></pre>
+<h4 id="2&#x53CD;&#x5E8F;&#x5217;&#x5316;">2.&#x53CD;&#x5E8F;&#x5217;&#x5316;</h4>
+<p>demo_py/tools &#x76EE;&#x5F55;&#x4E0B;&#x65B0;&#x5EFA; Python &#x6587;&#x4EF6; demo02_record_read_py.py&#xFF0C;&#x8F93;&#x5165;&#x5982;&#x4E0B;&#x5185;&#x5BB9;&#xFF1A;</p>
+<pre><code class="lang-cpp">#!/usr/bin/env python3
+&quot;&quot;&quot;  
+    &#x9700;&#x6C42;&#xFF1A;&#x5C06; student &#x6D88;&#x606F;&#x5199;&#x5165;&#x5230;&#x78C1;&#x76D8;&#x6587;&#x4EF6;
+    &#x5B9E;&#x73B0;&#xFF1A;
+        1.&#x521B;&#x5EFA;&#x8BFB;&#x53D6;&#x5BF9;&#x8C61;&#xFF1B;
+        2.&#x8BFB;&#x6D88;&#x606F;&#xFF1B;
+        3.&#x5173;&#x95ED;&#x6587;&#x4EF6;&#x6D41;&#x3002;
+
+
+&quot;&quot;&quot;
+from cyber.python.cyber_py3 import cyber
+from cyber.python.cyber_py3 import record
+from cyber.demo_base_proto.student_pb2 import Student
+
+if __name__ == &quot;__main__&quot;:
+    cyber.init()
+    print(&quot;record read ....&quot;)
+    reader = record.RecordReader(&quot;/apollo/cyber/demo_py/tools/mytest_py.record&quot;)
+    msgs = reader.read_messages()
+    count = 0
+    for msg in msgs:
+        count += 1
+        print(&quot;=&quot; * 20)
+        print(&quot;data NO.%d&quot; % count)
+        print(&quot;channel_name:%s&quot; % msg[0])
+        print(&quot;msg num %d&quot; % reader.get_messagenumber(msg[0]))
+        print(&quot;data:%s&quot; % msg[1])
+        print(&quot;data type:%s&quot; % msg[2])
+        print(&quot;time %d&quot; % msg[3])
+
+        msg_new = Student()
+        msg_new.ParseFromString(msg[1])
+        print(msg_new)
+</code></pre>
+<p>&#x914D;&#x7F6E;BUILD&#x6587;&#x4EF6;&#x6DFB;&#x52A0;&#x5185;&#x5BB9;&#x5982;&#x4E0B;:</p>
+<pre><code class="lang-py">py_binary(
+    name = <span class="hljs-string">&quot;demo02_record_read_py&quot;</span>,
+    srcs = [<span class="hljs-string">&quot;demo02_record_read_py.py&quot;</span>],
+    deps = [
+        <span class="hljs-string">&quot;//cyber/python/cyber_py3:cyber&quot;</span>,
+        <span class="hljs-string">&quot;//cyber/python/cyber_py3:record&quot;</span>,
+        <span class="hljs-string">&quot;//cyber/demo_base_proto:student_py&quot;</span>
+    ] 
+
+)
+</code></pre>
+<h4 id="3&#x7F16;&#x8BD1;&#x6267;&#x884C;">3.&#x7F16;&#x8BD1;&#x6267;&#x884C;</h4>
+<p>&#x7F16;&#x8BD1;&#xFF1A;</p>
+<pre><code>bazel build cyber/demo_py/tools/...
+</code></pre><p>&#x6267;&#x884C;&#xFF1A;</p>
+<pre><code>source cyber/setup.bash
+</code></pre><p>&#x5148;&#x6267;&#x884C;&#x5E8F;&#x5217;&#x5316;&#x64CD;&#x4F5C;&#xFF08;&#x6267;&#x884C;&#x5B8C;&#x6BD5;&#x5C06;&#x5728; demo_py/tools &#x76EE;&#x5F55;&#x4E0B;&#x751F;&#x6210;&#x4E00;&#x4E2A;&#x540D;&#x4E3A; mytest_py.record &#x7684;&#x7528;&#x4E8E;&#x4FDD;&#x5B58;&#x6D88;&#x606F;&#x6570;&#x636E;&#x7684;&#x6587;&#x4EF6;&#xFF09;</p>
+<pre><code>./bazel-bin/cyber/demo_py/tools/demo01_record_write_py
+</code></pre><p>&#x518D;&#x6267;&#x884C;&#x53CD;&#x5E8F;&#x5217;&#x5316;&#x64CD;&#x4F5C;&#xFF08;&#x6267;&#x884C;&#x5B8C;&#x6BD5;&#x5C06;&#x5728;&#x7EC8;&#x7AEF;&#x8F93;&#x51FA;&#x6587;&#x4EF6;&#x4E2D;&#x4FDD;&#x5B58;&#x7684;&#x6D88;&#x606F;&#x5185;&#x5BB9;&#xFF09;</p>
+<pre><code>./bazel-bin/cyber/demo_py/tools/demo02_record_read_py
+</code></pre>
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="321-c++-shi-xian.html" class="navigation navigation-prev " aria-label="Previous page: 3.2.1 C++ 实现">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="../../di-2-zhang-cyber-rt-tong-xin-ji-zhi/25-chang-yong-ming-ling.html" class="navigation navigation-next " aria-label="Next page: 3.2 常用命令">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"3.3.2 Python 实现","level":"1.4.1.2","depth":3,"next":{"title":"3.2 常用命令","level":"1.4.2","depth":2,"path":"di-2-zhang-cyber-rt-tong-xin-ji-zhi/25-chang-yong-ming-ling.md","ref":"di-2-zhang-cyber-rt-tong-xin-ji-zhi/25-chang-yong-ming-ling.md","articles":[]},"previous":{"title":"3.2.1 C++ 实现","level":"1.4.1.1","depth":3,"path":"di-3-zhang-cyber-rt-kai-fa-gong-ju/32-cyberrecorder/321-c++-shi-xian.md","ref":"di-3-zhang-cyber-rt-kai-fa-gong-ju/32-cyberrecorder/321-c++-shi-xian.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["expandable-chapters"],"pluginsConfig":{"expandable-chapters":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"di-3-zhang-cyber-rt-kai-fa-gong-ju/32-cyberrecorder/332-python-shi-xian.md","mtime":"2022-04-01T16:45:15.650Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2022-04-10T10:28:55.066Z"},"basePath":"../..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../../gitbook/gitbook.js"></script>
+    <script src="../../gitbook/theme.js"></script>
+    
+        
+        <script src="../../gitbook/gitbook-plugin-expandable-chapters/expandable-chapters.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+
