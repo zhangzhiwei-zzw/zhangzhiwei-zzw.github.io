@@ -1,0 +1,1008 @@
+<!DOCTYPE HTML>
+<html lang="en" >
+    
+    <head>
+        
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <title>自动编码器 | 在职高新课-深度学习</title>
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 2.6.7">
+        
+        
+        <meta name="HandheldFriendly" content="true"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <meta name="apple-mobile-web-app-status-bar-style" content="black">
+        <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+        <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+        
+    <link rel="stylesheet" href="../gitbook/style.css">
+    
+        
+        <link rel="stylesheet" href="../gitbook/plugins/gitbook-plugin-katex/katex.min.css">
+        
+    
+        
+        <link rel="stylesheet" href="../gitbook/plugins/gitbook-plugin-highlight/website.css">
+        
+    
+        
+        <link rel="stylesheet" href="../gitbook/plugins/gitbook-plugin-search/search.css">
+        
+    
+        
+        <link rel="stylesheet" href="../gitbook/plugins/gitbook-plugin-fontsettings/website.css">
+        
+    
+    
+
+        
+    
+    
+    <link rel="next" href="../day05/section3.html" />
+    
+    
+    <link rel="prev" href="../day05/section1.html" />
+    
+
+        
+    </head>
+    <body>
+        
+        
+    <div class="book"
+        data-level="5.2"
+        data-chapter-title="自动编码器"
+        data-filepath="day05/section2.md"
+        data-basepath=".."
+        data-revision="Mon Nov 19 2018 17:05:39 GMT+0800 (CST)"
+        data-innerlanguage="">
+    
+
+<div class="book-summary">
+    <nav role="navigation">
+        <ul class="summary">
+            
+            
+            
+            
+
+            
+
+            
+    
+        <li class="chapter " data-level="0" data-path="index.html">
+            
+                
+                    <a href="../index.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                        深度学习
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="1" data-path="day01/index.html">
+            
+                
+                    <a href="../day01/index.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.</b>
+                        
+                        深度学习与神经网络
+                    </a>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.1" data-path="day01/section1.html">
+            
+                
+                    <a href="../day01/section1.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.1.</b>
+                        
+                        深度学习介绍
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="day01/section2.html">
+            
+                
+                    <a href="../day01/section2.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.2.</b>
+                        
+                        神经网络基础
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="day01/section3.html">
+            
+                
+                    <a href="../day01/section3.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.3.</b>
+                        
+                        浅层神经网络
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="day01/section4.html">
+            
+                
+                    <a href="../day01/section4.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.4.</b>
+                        
+                        深层神经网络
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="day01/section5.html">
+            
+                
+                    <a href="../day01/section5.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.5.</b>
+                        
+                        总结
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" data-path="day01/section6.html">
+            
+                
+                    <a href="../day01/section6.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.6.</b>
+                        
+                        每日作业
+                    </a>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="2" data-path="day02/index.html">
+            
+                
+                    <a href="../day02/index.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.</b>
+                        
+                        深度学习进阶
+                    </a>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.1" data-path="day02/section1.html">
+            
+                
+                    <a href="../day02/section1.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.1.</b>
+                        
+                        多分类与TensorFlow
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2" data-path="day02/section2.html">
+            
+                
+                    <a href="../day02/section2.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.2.</b>
+                        
+                        梯度下降算法改进
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3" data-path="day02/section3.html">
+            
+                
+                    <a href="../day02/section3.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.3.</b>
+                        
+                        深度学习正则化
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4" data-path="day02/section4.html">
+            
+                
+                    <a href="../day02/section4.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.4.</b>
+                        
+                        神经网络调优与BN
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2.5" data-path="day02/section5.html">
+            
+                
+                    <a href="../day02/section5.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.5.</b>
+                        
+                        总结
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2.6" data-path="day02/section6.html">
+            
+                
+                    <a href="../day02/section6.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.6.</b>
+                        
+                        每日作业
+                    </a>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="3" data-path="day03/index.html">
+            
+                
+                    <a href="../day03/index.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.</b>
+                        
+                        卷积神经网络
+                    </a>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="3.1" data-path="day03/section1.html">
+            
+                
+                    <a href="../day03/section1.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.1.</b>
+                        
+                        图像数据与边缘检测
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="3.2" data-path="day03/section2.html">
+            
+                
+                    <a href="../day03/section2.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.2.</b>
+                        
+                        卷积神经网络(CNN)原理
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="3.3" data-path="day03/section3.html">
+            
+                
+                    <a href="../day03/section3.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.3.</b>
+                        
+                        经典分类网络结构
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="3.4" data-path="day03/section4.html">
+            
+                
+                    <a href="../day03/section4.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.4.</b>
+                        
+                        CNN网络实战技巧
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="3.5" data-path="day03/section5.html">
+            
+                
+                    <a href="../day03/section5.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.5.</b>
+                        
+                        总结
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="3.6" data-path="day03/section6.html">
+            
+                
+                    <a href="../day03/section6.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.6.</b>
+                        
+                        每日作业
+                    </a>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="4" data-path="day04/index.html">
+            
+                
+                    <a href="../day04/index.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.</b>
+                        
+                        循环神经网络
+                    </a>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="4.1" data-path="day04/section1.html">
+            
+                
+                    <a href="../day04/section1.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.1.</b>
+                        
+                        循环神经网络
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="4.2" data-path="day04/section2.html">
+            
+                
+                    <a href="../day04/section2.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.2.</b>
+                        
+                        词嵌入与NLP
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="4.3" data-path="day04/section3.html">
+            
+                
+                    <a href="../day04/section3.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.3.</b>
+                        
+                        seq2seq与Attention机制
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="4.4" data-path="day04/section4.html">
+            
+                
+                    <a href="../day04/section4.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.4.</b>
+                        
+                        总结
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="4.5" data-path="day04/section5.html">
+            
+                
+                    <a href="../day04/section5.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.5.</b>
+                        
+                        每日作业
+                    </a>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="5" data-path="day05/index.html">
+            
+                
+                    <a href="../day05/index.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.</b>
+                        
+                        高级主题
+                    </a>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="5.1" data-path="day05/section1.html">
+            
+                
+                    <a href="../day05/section1.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.1.</b>
+                        
+                        生成对抗网络(GAN)
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter active" data-level="5.2" data-path="day05/section2.html">
+            
+                
+                    <a href="../day05/section2.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.2.</b>
+                        
+                        自动编码器
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="5.3" data-path="day05/section3.html">
+            
+                
+                    <a href="../day05/section3.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.3.</b>
+                        
+                        CapsuleNet
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="5.4" data-path="day05/section4.html">
+            
+                
+                    <a href="../day05/section4.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.4.</b>
+                        
+                        总结
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="5.5" data-path="day05/section5.html">
+            
+                
+                    <a href="../day05/section5.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.5.</b>
+                        
+                        每日作业
+                    </a>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+
+            
+            <li class="divider"></li>
+            <li>
+                <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+                    Published with GitBook
+                </a>
+            </li>
+            
+        </ul>
+    </nav>
+</div>
+
+    <div class="book-body">
+        <div class="body-inner">
+            <div class="book-header" role="navigation">
+    <!-- Actions Left -->
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="../" >在职高新课-深度学习</a>
+    </h1>
+</div>
+
+            <div class="page-wrapper" tabindex="-1" role="main">
+                <div class="page-inner">
+                
+                
+                    <section class="normal" id="section-">
+                    
+                        <h1 id="52-&#x81EA;&#x52A8;&#x7F16;&#x7801;&#x5668;">5.2 &#x81EA;&#x52A8;&#x7F16;&#x7801;&#x5668;</h1>
+<h2 id="&#x5B66;&#x4E60;&#x76EE;&#x6807;">&#x5B66;&#x4E60;&#x76EE;&#x6807;</h2>
+<ul>
+<li>&#x76EE;&#x6807;<ul>
+<li>&#x4E86;&#x89E3;&#x81EA;&#x52A8;&#x7F16;&#x7801;&#x5668;&#x4F5C;&#x7528;</li>
+<li>&#x8BF4;&#x660E;&#x81EA;&#x52A8;&#x7F16;&#x7801;&#x5668;&#x7684;&#x7ED3;&#x6784;</li>
+</ul>
+</li>
+<li>&#x5E94;&#x7528;<ul>
+<li>&#x4F7F;&#x7528;&#x81EA;&#x52A8;&#x7F16;&#x7801;&#x5668;&#x5BF9;Mnist&#x624B;&#x5199;&#x6570;&#x5B57;&#x8FDB;&#x884C;&#x6570;&#x636E;&#x964D;&#x566A;&#x5904;&#x7406;</li>
+</ul>
+</li>
+</ul>
+<h3 id="521-&#x81EA;&#x52A8;&#x7F16;&#x7801;&#x5668;&#x4EC0;&#x4E48;&#x7528;">5.2.1 &#x81EA;&#x52A8;&#x7F16;&#x7801;&#x5668;&#x4EC0;&#x4E48;&#x7528;</h3>
+<p>&#x81EA;&#x7F16;&#x7801;&#x5668;&#x7684;&#x5E94;&#x7528;&#x4E3B;&#x8981;&#x6709;&#x4E24;&#x4E2A;&#x65B9;&#x9762;</p>
+<ul>
+<li>&#x6570;&#x636E;&#x53BB;&#x566A;</li>
+</ul>
+<p><img src="../images/&#x81EA;&#x52A8;&#x7F16;&#x7801;&#x5668;&#x53BB;&#x71E5;.png" alt=""></p>
+<ul>
+<li>&#x8FDB;&#x884C;&#x53EF;&#x89C6;&#x5316;&#x800C;&#x964D;&#x7EF4;<ul>
+<li>&#x81EA;&#x7F16;&#x7801;&#x5668;&#x53EF;&#x4EE5;&#x5B66;&#x4E60;&#x5230;&#x6BD4;PCA&#x7B49;&#x6280;&#x672F;&#x66F4;&#x597D;&#x7684;&#x6570;&#x636E;&#x6295;&#x5F71;</li>
+</ul>
+</li>
+</ul>
+<p><img src="../images/&#x81EA;&#x7F16;&#x7801;&#x5668;&#x964D;&#x7EF4;&#x6548;&#x679C;.png" alt=""></p>
+<h3 id="521-&#x4EC0;&#x4E48;&#x662F;&#x81EA;&#x52A8;&#x7F16;&#x7801;&#x5668;autoencoder">5.2.1 &#x4EC0;&#x4E48;&#x662F;&#x81EA;&#x52A8;&#x7F16;&#x7801;&#x5668;(Autoencoder)</h3>
+<h4 id="5211-&#x5B9A;&#x4E49;">5.2.1.1 &#x5B9A;&#x4E49;</h4>
+<p><img src="../images/&#x81EA;&#x52A8;&#x7F16;&#x7801;&#x5668;.png" alt=""></p>
+<p>&#x81EA;&#x52A8;&#x7F16;&#x7801;&#x5668;&#x662F;&#x4E00;&#x79CD;&#x6570;&#x636E;&#x7684;&#x538B;&#x7F29;&#x7B97;&#x6CD5;&#xFF0C;&#x4E00;&#x79CD;&#x4F7F;&#x7528;&#x795E;&#x7ECF;&#x7F51;&#x7EDC;&#x5B66;&#x4E60;&#x6570;&#x636E;&#x503C;&#x7F16;&#x7801;&#x7684;&#x65E0;&#x76D1;&#x7763;&#x65B9;&#x5F0F;&#x3002;</p>
+<h4 id="5212-&#x539F;&#x7406;&#x4F5C;&#x7528;&#x6848;&#x4F8B;">5.2.1.2 &#x539F;&#x7406;&#x4F5C;&#x7528;&#x6848;&#x4F8B;</h4>
+<p>&#x642D;&#x5EFA;&#x4E00;&#x4E2A;&#x81EA;&#x52A8;&#x7F16;&#x7801;&#x5668;&#x9700;&#x8981;&#x5B8C;&#x6210;&#x4E0B;&#x9762;&#x4E09;&#x6837;&#x5DE5;&#x4F5C;&#xFF1A;</p>
+<ul>
+<li>&#x642D;&#x5EFA;&#x7F16;&#x7801;&#x5668;</li>
+<li>&#x642D;&#x5EFA;&#x89E3;&#x7801;&#x5668;</li>
+<li>&#x8BBE;&#x5B9A;&#x4E00;&#x4E2A;&#x635F;&#x5931;&#x51FD;&#x6570;&#xFF0C;&#x7528;&#x4EE5;&#x8861;&#x91CF;&#x7531;&#x4E8E;&#x538B;&#x7F29;&#x800C;&#x635F;&#x5931;&#x6389;&#x7684;&#x4FE1;&#x606F;&#x3002;<ul>
+<li>&#x7F16;&#x7801;&#x5668;&#x548C;&#x89E3;&#x7801;&#x5668;&#x4E00;&#x822C;&#x90FD;&#x662F;&#x53C2;&#x6570;&#x5316;&#x7684;&#x65B9;&#x7A0B;&#xFF0C;&#x5E76;&#x5173;&#x4E8E;&#x635F;&#x5931;&#x51FD;&#x6570;&#x53EF;&#x5BFC;&#xFF0C;<strong>&#x901A;&#x5E38;&#x60C5;&#x51B5;&#x662F;&#x4F7F;&#x7528;&#x795E;&#x7ECF;&#x7F51;&#x7EDC;&#x3002;</strong></li>
+</ul>
+</li>
+</ul>
+<p><img src="../images/&#x6784;&#x5EFA;&#x81EA;&#x7F16;&#x7801;&#x5668;&#x601D;&#x8DEF;.png" alt=""></p>
+<h4 id="5213-&#x7C7B;&#x522B;">5.2.1.3 &#x7C7B;&#x522B;</h4>
+<ul>
+<li>&#x666E;&#x901A;&#x81EA;&#x7F16;&#x7801;&#x5668;<ul>
+<li>&#x7F16;&#x89E3;&#x7801;&#x7F51;&#x7EDC;&#x4F7F;&#x7528;&#x5168;&#x8FDE;&#x63A5;&#x5C42;</li>
+</ul>
+</li>
+<li>&#x591A;&#x5C42;&#x81EA;&#x7F16;&#x7801;&#x5668;</li>
+<li>&#x5377;&#x79EF;&#x81EA;&#x7F16;&#x7801;&#x5668;<ul>
+<li>&#x7F16;&#x89E3;&#x7801;&#x5668;&#x4F7F;&#x7528;&#x5377;&#x79EF;&#x7ED3;&#x6784;</li>
+</ul>
+</li>
+<li>&#x6B63;&#x5219;&#x5316;&#x81EA;&#x7F16;&#x7801;&#x5668;<ul>
+<li>&#x964D;&#x566A;&#x81EA;&#x7F16;&#x7801;&#x5668;</li>
+</ul>
+</li>
+</ul>
+<h3 id="522-keras&#x5FEB;&#x901F;&#x642D;&#x5EFA;&#x666E;&#x901A;&#x81EA;&#x7F16;&#x7801;&#x5668;&#x57FA;&#x4E8E;mnist&#x624B;&#x5199;&#x6570;&#x5B57;">5.2.2 Keras&#x5FEB;&#x901F;&#x642D;&#x5EFA;&#x666E;&#x901A;&#x81EA;&#x7F16;&#x7801;&#x5668;-&#x57FA;&#x4E8E;Mnist&#x624B;&#x5199;&#x6570;&#x5B57;</h3>
+<h4 id="5221-&#x81EA;&#x7F16;&#x7801;&#x5668;&#x6548;&#x679C;">5.2.2.1 &#x81EA;&#x7F16;&#x7801;&#x5668;&#x6548;&#x679C;</h4>
+<ul>
+<li>&#x8FED;&#x4EE3;50&#x6B21;&#x6548;&#x679C;</li>
+</ul>
+<p><img src="../images/&#x666E;&#x901A;&#x81EA;&#x7F16;&#x7801;&#x5668;&#x6548;&#x679C;.png" alt=""></p>
+<pre><code class="lang-python">Train on <span class="hljs-number">60000</span> samples, validate on <span class="hljs-number">10000</span> samples
+Epoch <span class="hljs-number">1</span>/<span class="hljs-number">50</span>
+  <span class="hljs-number">256</span>/<span class="hljs-number">60000</span> [..............................] - ETA: <span class="hljs-number">44</span>s - loss: <span class="hljs-number">0.6957</span>
+ <span class="hljs-number">1280</span>/<span class="hljs-number">60000</span> [..............................] - ETA: <span class="hljs-number">11</span>s - loss: <span class="hljs-number">0.6867</span>
+ <span class="hljs-number">2560</span>/<span class="hljs-number">60000</span> [&gt;.............................] - ETA: <span class="hljs-number">6</span>s - loss: <span class="hljs-number">0.6699</span> 
+ <span class="hljs-number">3584</span>/<span class="hljs-number">60000</span> [&gt;.............................] - ETA: <span class="hljs-number">5</span>s - loss: <span class="hljs-number">0.6493</span>
+...
+...
+...
+<span class="hljs-number">55808</span>/<span class="hljs-number">60000</span> [==========================&gt;...] - ETA: <span class="hljs-number">0</span>s - loss: <span class="hljs-number">0.0925</span>
+<span class="hljs-number">57088</span>/<span class="hljs-number">60000</span> [===========================&gt;..] - ETA: <span class="hljs-number">0</span>s - loss: <span class="hljs-number">0.0925</span>
+<span class="hljs-number">58112</span>/<span class="hljs-number">60000</span> [============================&gt;.] - ETA: <span class="hljs-number">0</span>s - loss: <span class="hljs-number">0.0925</span>
+<span class="hljs-number">59392</span>/<span class="hljs-number">60000</span> [============================&gt;.] - ETA: <span class="hljs-number">0</span>s - loss: <span class="hljs-number">0.0925</span>
+<span class="hljs-number">60000</span>/<span class="hljs-number">60000</span> [==============================] - <span class="hljs-number">3</span>s <span class="hljs-number">47</span>us/step - loss: <span class="hljs-number">0.0925</span> - val_loss: <span class="hljs-number">0.0914</span>
+</code></pre>
+<h4 id="5222-&#x6D41;&#x7A0B;">5.2.2.2 &#x6D41;&#x7A0B;</h4>
+<ul>
+<li>&#x521D;&#x59CB;&#x5316;&#x81EA;&#x7F16;&#x7801;&#x5668;&#x7ED3;&#x6784;</li>
+<li>&#x8BAD;&#x7EC3;&#x81EA;&#x7F16;&#x7801;&#x5668;<ul>
+<li>&#x83B7;&#x53D6;&#x6570;&#x636E;</li>
+<li>&#x6A21;&#x578B;&#x8F93;&#x5165;&#x8F93;&#x51FA;&#x8BAD;&#x7EC3;</li>
+</ul>
+</li>
+<li>&#x663E;&#x793A;&#x81EA;&#x7F16;&#x7801;&#x524D;&#x540E;&#x6548;&#x679C;&#x5BF9;&#x6BD4;</li>
+</ul>
+<h4 id="5223-&#x4EE3;&#x7801;&#x7F16;&#x5199;">5.2.2.3 &#x4EE3;&#x7801;&#x7F16;&#x5199;</h4>
+<p>&#x5BFC;&#x5165;&#x6240;&#x9700;&#x5305;</p>
+<pre><code class="lang-python"><span class="hljs-keyword">from</span> keras.layers <span class="hljs-keyword">import</span> Input, Dense
+<span class="hljs-keyword">from</span> keras.models <span class="hljs-keyword">import</span> Model
+<span class="hljs-keyword">from</span> keras.datasets <span class="hljs-keyword">import</span> mnist
+<span class="hljs-keyword">import</span> numpy <span class="hljs-keyword">as</span> np
+<span class="hljs-keyword">import</span> matplotlib.pyplot <span class="hljs-keyword">as</span> plt
+</code></pre>
+<ul>
+<li>1&#x3001;&#x521D;&#x59CB;&#x5316;&#x81EA;&#x7F16;&#x7801;&#x5668;&#x7ED3;&#x6784;</li>
+</ul>
+<p>&#x5B9A;&#x4E49;&#x7F16;&#x7801;&#x5668;&#xFF1A;&#x8F93;&#x51FA;32&#x4E2A;&#x795E;&#x7ECF;&#x5143;&#xFF0C;&#x4F7F;&#x7528;relu&#x6FC0;&#x6D3B;&#x51FD;&#x6570;&#xFF0C;&#xFF08;32&#x8FD9;&#x4E2A;&#x503C;&#x53EF;&#x4EE5;&#x81EA;&#x5DF1;&#x5236;&#x5B9A;&#xFF09;</p>
+<p>&#x5B9A;&#x4E49;&#x89E3;&#x7801;&#x5668;&#xFF1A;&#x8F93;&#x51FA;784&#x4E2A;&#x795E;&#x7ECF;&#x5143;&#xFF0C;&#x4F7F;&#x7528;sigmoid&#x51FD;&#x6570;&#xFF0C;&#xFF08;784&#x8FD9;&#x4E2A;&#x503C;&#x662F;&#x8F93;&#x51FA;&#x4E0E;&#x539F;&#x56FE;&#x7247;&#x5927;&#x5C0F;&#x4E00;&#x81F4;&#xFF09;</p>
+<p>&#x635F;&#x5931;&#xFF1A;</p>
+<ul>
+<li>&#x6BCF;&#x4E2A;&#x50CF;&#x7D20;&#x503C;&#x7684;&#x4EA4;&#x53C9;&#x71B5;&#x635F;&#x5931;&#xFF08;&#x8F93;&#x51FA;&#x4E3A;sigmoid&#x503C;(0,1)&#xFF0C;&#x8F93;&#x5165;&#x56FE;&#x7247;&#x8981;&#x8FDB;&#x884C;&#x5F52;&#x4E00;&#x5316;(0,1)&#xFF09;</li>
+</ul>
+<pre><code class="lang-python"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">AutoEncoder</span><span class="hljs-params">(object)</span>:</span>
+    <span class="hljs-string">&quot;&quot;&quot;&#x81EA;&#x52A8;&#x7F16;&#x7801;&#x5668;
+    &quot;&quot;&quot;</span>
+    <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">__init__</span><span class="hljs-params">(self)</span>:</span>
+
+        self.encoding_dim = <span class="hljs-number">32</span>
+        self.decoding_dim = <span class="hljs-number">784</span>
+
+        self.model = self.auto_encoder_model()
+
+    <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">auto_encoder_model</span><span class="hljs-params">(self)</span>:</span>
+        <span class="hljs-string">&quot;&quot;&quot;
+        &#x521D;&#x59CB;&#x5316;&#x81EA;&#x52A8;&#x7F16;&#x7801;&#x5668;&#x6A21;&#x578B;
+        &#x5C06;&#x7F16;&#x7801;&#x5668;&#x548C;&#x89E3;&#x7801;&#x5668;&#x653E;&#x5728;&#x4E00;&#x8D77;&#x4F5C;&#x4E3A;&#x4E00;&#x4E2A;&#x6A21;&#x578B;
+        :return: auto_encoder
+        &quot;&quot;&quot;</span>
+        input_img = Input(shape=(<span class="hljs-number">784</span>,))
+
+        encoder = Dense(self.encoding_dim, activation=<span class="hljs-string">&apos;relu&apos;</span>)(input_img)
+
+        decoder = Dense(self.decoding_dim, activation=<span class="hljs-string">&apos;sigmoid&apos;</span>)(encoder)
+
+        auto_encoder = Model(inputs=input_img, outputs=decoder)
+
+        auto_encoder.compile(optimizer=<span class="hljs-string">&apos;adam&apos;</span>, loss=<span class="hljs-string">&apos;binary_crossentropy&apos;</span>)
+
+        <span class="hljs-keyword">return</span> auto_encoder
+</code></pre>
+<ul>
+<li>2&#x3001;&#x8BAD;&#x7EC3;&#x6D41;&#x7A0B;<ul>
+<li>&#x8BFB;&#x53D6;Mnist&#x6570;&#x636E;&#xFF0C;&#x5E76;&#x8FDB;&#x884C;&#x5F52;&#x4E00;&#x5316;&#x5904;&#x7406;&#x4EE5;&#x53CA;&#x5F62;&#x72B6;&#x4FEE;&#x6539;</li>
+<li>&#x6A21;&#x578B;&#x8FDB;&#x884C;fit&#x8BAD;&#x7EC3;<ul>
+<li>&#x6307;&#x5B9A;&#x8FED;&#x4EE3;&#x6B21;&#x6570;</li>
+<li>&#x6307;&#x5B9A;&#x6BCF;&#x6279;&#x6B21;&#x6570;&#x636E;&#x5927;&#x5C0F;</li>
+<li>&#x662F;&#x5426;&#x6253;&#x4E71;&#x6570;&#x636E;</li>
+<li>&#x9A8C;&#x8BC1;&#x96C6;&#x5408;</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<pre><code class="lang-python"><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">train</span><span class="hljs-params">(self)</span>:</span>
+    <span class="hljs-string">&quot;&quot;&quot;
+    &#x8BAD;&#x7EC3;&#x81EA;&#x7F16;&#x7801;&#x5668;
+    :param model: &#x7F16;&#x7801;&#x5668;&#x7ED3;&#x6784;
+    :return:
+    &quot;&quot;&quot;</span>
+    (x_train, _), (x_test, _) = mnist.load_data()
+
+    <span class="hljs-comment"># &#x8FDB;&#x884C;&#x5F52;&#x4E00;&#x5316;</span>
+    x_train = x_train.astype(<span class="hljs-string">&apos;float32&apos;</span>) / <span class="hljs-number">255.</span>
+    x_test = x_test.astype(<span class="hljs-string">&apos;float32&apos;</span>) / <span class="hljs-number">255.</span>
+
+    <span class="hljs-comment"># &#x8FDB;&#x884C;&#x5F62;&#x72B6;&#x6539;&#x53D8;</span>
+    x_train = np.reshape(x_train, (len(x_train), np.prod(x_train.shape[<span class="hljs-number">1</span>:])))
+    x_test = np.reshape(x_test, (len(x_test), np.prod(x_test.shape[<span class="hljs-number">1</span>:])))
+
+    print(x_train.shape)
+    print(x_test.shape)
+
+    <span class="hljs-comment"># &#x8BAD;&#x7EC3;</span>
+    self.model.fit(x_train, x_train,
+                   epochs=<span class="hljs-number">5</span>,
+                   batch_size=<span class="hljs-number">256</span>,
+                   shuffle=<span class="hljs-keyword">True</span>,
+                   validation_data=(x_test, x_test))
+</code></pre>
+<ul>
+<li>3&#x3001;&#x663E;&#x793A;&#x6A21;&#x578B;&#x751F;&#x6210;&#x7684;&#x56FE;&#x7247;&#x4E0E;&#x539F;&#x59CB;&#x56FE;&#x7247;&#x5BF9;&#x6BD4;<ul>
+<li>&#x5BFC;&#x5165;matplotlib&#x5305;</li>
+</ul>
+</li>
+</ul>
+<pre><code class="lang-python">    <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">display</span><span class="hljs-params">(self)</span>:</span>
+        <span class="hljs-string">&quot;&quot;&quot;
+        &#x663E;&#x793A;&#x524D;&#x540E;&#x6548;&#x679C;&#x5BF9;&#x6BD4;
+        :return:
+        &quot;&quot;&quot;</span>
+        (x_train, _), (x_test, _) = mnist.load_data()
+
+        x_test = np.reshape(x_test, (len(x_test), np.prod(x_test.shape[<span class="hljs-number">1</span>:])))
+
+        decoded_imgs = self.model.predict(x_test)
+
+        plt.figure(figsize=(<span class="hljs-number">20</span>, <span class="hljs-number">4</span>))
+        <span class="hljs-comment"># &#x663E;&#x793A;5&#x5F20;&#x7ED3;&#x679C;</span>
+        n = <span class="hljs-number">5</span>
+        <span class="hljs-keyword">for</span> i <span class="hljs-keyword">in</span> range(n):
+            <span class="hljs-comment"># &#x663E;&#x793A;&#x7F16;&#x7801;&#x524D;&#x7ED3;&#x679C;</span>
+            ax = plt.subplot(<span class="hljs-number">2</span>, n, i + <span class="hljs-number">1</span>)
+            plt.imshow(x_test[i].reshape(<span class="hljs-number">28</span>, <span class="hljs-number">28</span>))
+            plt.gray()
+            ax.get_xaxis().set_visible(<span class="hljs-keyword">False</span>)
+            ax.get_yaxis().set_visible(<span class="hljs-keyword">False</span>)
+
+            <span class="hljs-comment"># &#x663E;&#x793A;&#x7F16;&#x89E3;&#x7801;&#x540E;&#x7ED3;&#x679C;</span>
+            ax = plt.subplot(<span class="hljs-number">2</span>, n, i + n + <span class="hljs-number">1</span>)
+            plt.imshow(decoded_imgs[i].reshape(<span class="hljs-number">28</span>, <span class="hljs-number">28</span>))
+            plt.gray()
+            ax.get_xaxis().set_visible(<span class="hljs-keyword">False</span>)
+            ax.get_yaxis().set_visible(<span class="hljs-keyword">False</span>)
+        plt.show()
+</code></pre>
+<h3 id="523-&#x57FA;&#x4E8E;mnist&#x624B;&#x5199;&#x6570;&#x5B57;&#x6DF1;&#x5EA6;&#x81EA;&#x7F16;&#x7801;&#x5668;">5.2.3 &#x57FA;&#x4E8E;Mnist&#x624B;&#x5199;&#x6570;&#x5B57;-&#x6DF1;&#x5EA6;&#x81EA;&#x7F16;&#x7801;&#x5668;</h3>
+<ul>
+<li>&#x5C06;&#x591A;&#x4E2A;&#x81EA;&#x7F16;&#x7801;&#x8FDB;&#x884C;&#x91CD;&#x53E0;</li>
+</ul>
+<pre><code class="lang-python">input_img = Input(shape=(<span class="hljs-number">784</span>,))
+encoded = Dense(<span class="hljs-number">128</span>, activation=<span class="hljs-string">&apos;relu&apos;</span>)(input_img)
+encoded = Dense(<span class="hljs-number">64</span>, activation=<span class="hljs-string">&apos;relu&apos;</span>)(encoded)
+encoded = Dense(<span class="hljs-number">32</span>, activation=<span class="hljs-string">&apos;relu&apos;</span>)(encoded)
+
+decoded = Dense(<span class="hljs-number">64</span>, activation=<span class="hljs-string">&apos;relu&apos;</span>)(encoded)
+decoded = Dense(<span class="hljs-number">128</span>, activation=<span class="hljs-string">&apos;relu&apos;</span>)(decoded)
+decoded = Dense(<span class="hljs-number">784</span>, activation=<span class="hljs-string">&apos;sigmoid&apos;</span>)(decoded)
+
+auto_encoder = Model(input=input_img, output=decoded)
+auto_encoder.compile(optimizer=<span class="hljs-string">&apos;adam&apos;</span>, loss=<span class="hljs-string">&apos;binary_crossentropy&apos;</span>)
+</code></pre>
+<p>&#x6211;&#x4EEC;&#x53EF;&#x4EE5;&#x66FF;&#x6362;&#x539F;&#x6765;&#x7684;&#x7F16;&#x7801;&#x5668;&#x8FDB;&#x884C;&#x6D4B;&#x8BD5;</p>
+<pre><code>59392/60000 [============================&gt;.] - ETA: 0s - loss: 0.0860
+</code></pre><p>&#x6700;&#x540E;&#x7684;&#x635F;&#x5931;&#x4F1A;&#x8F83;&#x4E4B;&#x524D;&#x540C;&#x6837;&#x7684;epoch&#x8FED;&#x4EE3;&#x597D;&#x4E00;&#x4E9B;</p>
+<h3 id="524-&#x57FA;&#x4E8E;mnist&#x624B;&#x5199;&#x6570;&#x5B57;&#x5377;&#x79EF;&#x81EA;&#x7F16;&#x7801;&#x5668;">5.2.4 &#x57FA;&#x4E8E;Mnist&#x624B;&#x5199;&#x6570;&#x5B57;-&#x5377;&#x79EF;&#x81EA;&#x7F16;&#x7801;&#x5668;</h3>
+<ul>
+<li>&#x5377;&#x79EF;&#x7F16;&#x89E3;&#x7801;&#x7ED3;&#x6784;&#x8BBE;&#x8BA1;<ul>
+<li>&#x7F16;&#x7801;&#x5668;<ul>
+<li>Conv2D(32, (3, 3), activation=&apos;relu&apos;, padding=&apos;same&apos;)</li>
+<li>MaxPooling2D((2, 2), padding=&apos;same&apos;)</li>
+<li>Conv2D(32, (3, 3), activation=&apos;relu&apos;, padding=&apos;same&apos;)</li>
+<li>MaxPooling2D((2, 2), padding=&apos;same&apos;)</li>
+<li>&#x8F93;&#x51FA;&#x5927;&#x5C0F;&#x4E3A;:Tensor(&quot;max_pooling2d_2/MaxPool:0&quot;, shape=(?, 7, 7, 32), dtype=float32)</li>
+</ul>
+</li>
+<li>&#x89E3;&#x7801;&#x5668;:&#x53CD;&#x5377;&#x79EF;&#x8FC7;&#x7A0B;<ul>
+<li>Conv2D(32, (3, 3), activation=&apos;relu&apos;, padding=&apos;same&apos;)</li>
+<li>UpSampling2D((2, 2))</li>
+<li>Conv2D(32, (3, 3), activation=&apos;relu&apos;, padding=&apos;same&apos;)</li>
+<li>UpSampling2D((2, 2))</li>
+<li>Conv2D(1, (3, 3), activation=&apos;sigmoid&apos;, padding=&apos;same&apos;)</li>
+<li>&#x8F93;&#x51FA;&#x5927;&#x5C0F;&#xFF1A;Tensor(&quot;conv2d_5/Sigmoid:0&quot;, shape=(?, 28, 28, 1), dtype=float32)</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<pre><code class="lang-python">input_img = Input(shape=(<span class="hljs-number">28</span>, <span class="hljs-number">28</span>, <span class="hljs-number">1</span>))
+
+x = Conv2D(<span class="hljs-number">32</span>, (<span class="hljs-number">3</span>, <span class="hljs-number">3</span>), activation=<span class="hljs-string">&apos;relu&apos;</span>, padding=<span class="hljs-string">&apos;same&apos;</span>)(input_img)
+x = MaxPooling2D((<span class="hljs-number">2</span>, <span class="hljs-number">2</span>), padding=<span class="hljs-string">&apos;same&apos;</span>)(x)
+x = Conv2D(<span class="hljs-number">32</span>, (<span class="hljs-number">3</span>, <span class="hljs-number">3</span>), activation=<span class="hljs-string">&apos;relu&apos;</span>, padding=<span class="hljs-string">&apos;same&apos;</span>)(x)
+encoded = MaxPooling2D((<span class="hljs-number">2</span>, <span class="hljs-number">2</span>), padding=<span class="hljs-string">&apos;same&apos;</span>)(x)
+print(encoded)
+
+x = Conv2D(<span class="hljs-number">32</span>, (<span class="hljs-number">3</span>, <span class="hljs-number">3</span>), activation=<span class="hljs-string">&apos;relu&apos;</span>, padding=<span class="hljs-string">&apos;same&apos;</span>)(encoded)
+x = UpSampling2D((<span class="hljs-number">2</span>, <span class="hljs-number">2</span>))(x)
+x = Conv2D(<span class="hljs-number">32</span>, (<span class="hljs-number">3</span>, <span class="hljs-number">3</span>), activation=<span class="hljs-string">&apos;relu&apos;</span>, padding=<span class="hljs-string">&apos;same&apos;</span>)(x)
+x = UpSampling2D((<span class="hljs-number">2</span>, <span class="hljs-number">2</span>))(x)
+decoded = Conv2D(<span class="hljs-number">1</span>, (<span class="hljs-number">3</span>, <span class="hljs-number">3</span>), activation=<span class="hljs-string">&apos;sigmoid&apos;</span>, padding=<span class="hljs-string">&apos;same&apos;</span>)(x)
+print(decoded)
+
+auto_encoder = Model(input_img, decoded)
+auto_encoder.compile(optimizer=<span class="hljs-string">&apos;adam&apos;</span>, loss=<span class="hljs-string">&apos;binary_crossentropy&apos;</span>)
+</code></pre>
+<p>&#x7531;&#x4E8E;&#x4FEE;&#x6539;&#x4E86;&#x6A21;&#x578B;&#x7684;&#x8F93;&#x5165;&#x8F93;&#x51FA;&#x6570;&#x636E;&#x5F62;&#x72B6;&#xFF0C;&#x6240;&#x4EE5;&#x5728;&#x8BAD;&#x7EC3;&#x7684;&#x5730;&#x65B9;&#x540C;&#x6837;&#x4E5F;&#x9700;&#x8981;&#x4FEE;&#x6539;&#xFF08;&#x663E;&#x793A;&#x7684;&#x65F6;&#x5019;&#x6570;&#x636E;&#x8F93;&#x5165;&#x4E5F;&#x8981;&#x4FEE;&#x6539;&#xFF09;</p>
+<pre><code class="lang-python">x_train = np.reshape(x_train, (len(x_train), <span class="hljs-number">28</span>, <span class="hljs-number">28</span>, <span class="hljs-number">1</span>))
+x_test = np.reshape(x_test, (len(x_test), <span class="hljs-number">28</span>, <span class="hljs-number">28</span>, <span class="hljs-number">1</span>))
+</code></pre>
+<h3 id="524-&#x57FA;&#x4E8E;mnist&#x624B;&#x5199;&#x6570;&#x5B57;&#x964D;&#x566A;&#x81EA;&#x7F16;&#x7801;&#x5668;">5.2.4 &#x57FA;&#x4E8E;Mnist&#x624B;&#x5199;&#x6570;&#x5B57;-&#x964D;&#x566A;&#x81EA;&#x7F16;&#x7801;&#x5668;</h3>
+<ul>
+<li>&#x964D;&#x566A;&#x81EA;&#x7F16;&#x7801;&#x5668;&#x6548;&#x679C;</li>
+</ul>
+<p><img src="../images/&#x81EA;&#x52A8;&#x7F16;&#x7801;&#x5668;&#x53BB;&#x71E5;.png" alt=""></p>
+<ul>
+<li>&#x8FC7;&#x7A0B;<ul>
+<li>&#x5BF9;&#x539F;&#x59CB;&#x6570;&#x636E;&#x6DFB;&#x52A0;&#x566A;&#x97F3;</li>
+<li>&#x968F;&#x673A;&#x52A0;&#x4E0A;&#x6B63;&#x6001;&#x5206;&#x5E03;&#x7684;&#x566A;&#x97F3;</li>
+<li>x_train + np.random.normal(loc=0.0, scale=1.0, size=x_train.shape)</li>
+</ul>
+</li>
+</ul>
+<pre><code class="lang-python"><span class="hljs-comment"># &#x6DFB;&#x52A0;&#x566A;&#x97F3;</span>
+x_train_noisy = x_train + np.random.normal(loc=<span class="hljs-number">0.0</span>, scale=<span class="hljs-number">3.0</span>, size=x_train.shape)
+x_test_noisy = x_test + np.random.normal(loc=<span class="hljs-number">0.0</span>, scale=<span class="hljs-number">3.0</span>, size=x_test.shape)
+
+<span class="hljs-comment"># &#x91CD;&#x65B0;&#x8FDB;&#x884C;&#x9650;&#x5236;&#x6BCF;&#x4E2A;&#x50CF;&#x7D20;&#x503C;&#x7684;&#x5927;&#x5C0F;&#x5728;0~1&#x4E4B;&#x95F4;</span>
+x_train_noisy = np.clip(x_train_noisy, <span class="hljs-number">0.</span>, <span class="hljs-number">1.</span>)
+x_test_noisy = np.clip(x_test_noisy, <span class="hljs-number">0.</span>, <span class="hljs-number">1.</span>)
+</code></pre>
+<p>&#x5728;&#x8FDB;&#x884C;&#x663E;&#x793A;&#x7684;&#x65F6;&#x5019;&#x4E5F;&#x8981;&#x8FDB;&#x884C;&#x4FEE;&#x6539;</p>
+<pre><code class="lang-python"><span class="hljs-comment"># &#x83B7;&#x53D6;&#x6570;&#x636E;&#x6539;&#x53D8;&#x5F62;&#x72B6;&#xFF0C;&#x589E;&#x52A0;&#x566A;&#x70B9;&#x6570;&#x636E;</span>
+(x_train, _), (x_test, _) = mnist.load_data()
+x_test = np.reshape(x_test, (len(x_test), <span class="hljs-number">28</span>, <span class="hljs-number">28</span>, <span class="hljs-number">1</span>))
+x_test_noisy = x_test + np.random.normal(loc=<span class="hljs-number">3.0</span>, scale=<span class="hljs-number">10.0</span>, size=x_test.shape)
+
+<span class="hljs-comment"># &#x9884;&#x6D4B;&#x7ED3;&#x679C;</span>
+decoded_imgs = self.model.predict(x_test_noisy)
+
+<span class="hljs-comment"># &#x4FEE;&#x6539;&#x9700;&#x8981;&#x663E;&#x793A;&#x7684;&#x56FE;&#x7247;&#x53D8;&#x91CF;</span>
+plt.imshow(x_test_noisy[i].reshape(<span class="hljs-number">28</span>, <span class="hljs-number">28</span>))
+</code></pre>
+<h3 id="525-&#x603B;&#x7ED3;">5.2.5 &#x603B;&#x7ED3;</h3>
+<ul>
+<li>&#x638C;&#x63E1;&#x81EA;&#x52A8;&#x7F16;&#x7801;&#x5668;&#x7684;&#x7ED3;&#x6784;</li>
+<li>&#x638C;&#x63E1;&#x6B63;&#x5219;&#x5316;&#x81EA;&#x52A8;&#x7F16;&#x7801;&#x5668;&#x7ED3;&#x6784;&#x4F5C;&#x7528;</li>
+</ul>
+
+                    
+                    </section>
+                
+                
+                </div>
+            </div>
+        </div>
+
+        
+        <a href="../day05/section1.html" class="navigation navigation-prev " aria-label="Previous page: 生成对抗网络(GAN)"><i class="fa fa-angle-left"></i></a>
+        
+        
+        <a href="../day05/section3.html" class="navigation navigation-next " aria-label="Next page: CapsuleNet"><i class="fa fa-angle-right"></i></a>
+        
+    </div>
+</div>
+
+        
+<script src="../gitbook/app.js"></script>
+
+    
+    <script src="../gitbook/plugins/gitbook-plugin-search/lunr.min.js"></script>
+    
+
+    
+    <script src="../gitbook/plugins/gitbook-plugin-search/search.js"></script>
+    
+
+    
+    <script src="../gitbook/plugins/gitbook-plugin-sharing/buttons.js"></script>
+    
+
+    
+    <script src="../gitbook/plugins/gitbook-plugin-fontsettings/buttons.js"></script>
+    
+
+    
+    <script src="../gitbook/plugins/gitbook-plugin-livereload/plugin.js"></script>
+    
+
+<script>
+require(["gitbook"], function(gitbook) {
+    var config = {"katex":{},"highlight":{},"search":{"maxIndexSize":1000000},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"livereload":{}};
+    gitbook.start(config);
+});
+</script>
+
+        
+    </body>
+    
+</html>

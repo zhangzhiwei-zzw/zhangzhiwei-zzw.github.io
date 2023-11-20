@@ -67,6 +67,7 @@ nav:
     - 设计模式: Java/designpattern/designpattern.md
   - Python: 
     - Python/index.md
+    - 深度学习: Python/deeplearning/index.html
   - ROS2学习: 
     - ROS2学习/index.md
     - ROS2-Gazebo仿真: ROS2学习/ROS2-Gazebo仿真.md

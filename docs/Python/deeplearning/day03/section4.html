@@ -1,0 +1,747 @@
+<!DOCTYPE HTML>
+<html lang="en" >
+    
+    <head>
+        
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <title>CNN网络实战技巧 | 在职高新课-深度学习</title>
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 2.6.7">
+        
+        
+        <meta name="HandheldFriendly" content="true"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <meta name="apple-mobile-web-app-status-bar-style" content="black">
+        <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+        <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+        
+    <link rel="stylesheet" href="../gitbook/style.css">
+    
+        
+        <link rel="stylesheet" href="../gitbook/plugins/gitbook-plugin-katex/katex.min.css">
+        
+    
+        
+        <link rel="stylesheet" href="../gitbook/plugins/gitbook-plugin-highlight/website.css">
+        
+    
+        
+        <link rel="stylesheet" href="../gitbook/plugins/gitbook-plugin-search/search.css">
+        
+    
+        
+        <link rel="stylesheet" href="../gitbook/plugins/gitbook-plugin-fontsettings/website.css">
+        
+    
+    
+
+        
+    
+    
+    <link rel="next" href="../day03/section5.html" />
+    
+    
+    <link rel="prev" href="../day03/section3.html" />
+    
+
+        
+    </head>
+    <body>
+        
+        
+    <div class="book"
+        data-level="3.4"
+        data-chapter-title="CNN网络实战技巧"
+        data-filepath="day03/section4.md"
+        data-basepath=".."
+        data-revision="Mon Nov 19 2018 17:05:39 GMT+0800 (CST)"
+        data-innerlanguage="">
+    
+
+<div class="book-summary">
+    <nav role="navigation">
+        <ul class="summary">
+            
+            
+            
+            
+
+            
+
+            
+    
+        <li class="chapter " data-level="0" data-path="index.html">
+            
+                
+                    <a href="../index.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                        深度学习
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="1" data-path="day01/index.html">
+            
+                
+                    <a href="../day01/index.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.</b>
+                        
+                        深度学习与神经网络
+                    </a>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.1" data-path="day01/section1.html">
+            
+                
+                    <a href="../day01/section1.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.1.</b>
+                        
+                        深度学习介绍
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="day01/section2.html">
+            
+                
+                    <a href="../day01/section2.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.2.</b>
+                        
+                        神经网络基础
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="day01/section3.html">
+            
+                
+                    <a href="../day01/section3.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.3.</b>
+                        
+                        浅层神经网络
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="day01/section4.html">
+            
+                
+                    <a href="../day01/section4.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.4.</b>
+                        
+                        深层神经网络
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="day01/section5.html">
+            
+                
+                    <a href="../day01/section5.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.5.</b>
+                        
+                        总结
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" data-path="day01/section6.html">
+            
+                
+                    <a href="../day01/section6.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.6.</b>
+                        
+                        每日作业
+                    </a>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="2" data-path="day02/index.html">
+            
+                
+                    <a href="../day02/index.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.</b>
+                        
+                        深度学习进阶
+                    </a>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.1" data-path="day02/section1.html">
+            
+                
+                    <a href="../day02/section1.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.1.</b>
+                        
+                        多分类与TensorFlow
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2" data-path="day02/section2.html">
+            
+                
+                    <a href="../day02/section2.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.2.</b>
+                        
+                        梯度下降算法改进
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3" data-path="day02/section3.html">
+            
+                
+                    <a href="../day02/section3.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.3.</b>
+                        
+                        深度学习正则化
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4" data-path="day02/section4.html">
+            
+                
+                    <a href="../day02/section4.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.4.</b>
+                        
+                        神经网络调优与BN
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2.5" data-path="day02/section5.html">
+            
+                
+                    <a href="../day02/section5.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.5.</b>
+                        
+                        总结
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2.6" data-path="day02/section6.html">
+            
+                
+                    <a href="../day02/section6.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.6.</b>
+                        
+                        每日作业
+                    </a>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="3" data-path="day03/index.html">
+            
+                
+                    <a href="../day03/index.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.</b>
+                        
+                        卷积神经网络
+                    </a>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="3.1" data-path="day03/section1.html">
+            
+                
+                    <a href="../day03/section1.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.1.</b>
+                        
+                        图像数据与边缘检测
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="3.2" data-path="day03/section2.html">
+            
+                
+                    <a href="../day03/section2.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.2.</b>
+                        
+                        卷积神经网络(CNN)原理
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="3.3" data-path="day03/section3.html">
+            
+                
+                    <a href="../day03/section3.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.3.</b>
+                        
+                        经典分类网络结构
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter active" data-level="3.4" data-path="day03/section4.html">
+            
+                
+                    <a href="../day03/section4.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.4.</b>
+                        
+                        CNN网络实战技巧
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="3.5" data-path="day03/section5.html">
+            
+                
+                    <a href="../day03/section5.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.5.</b>
+                        
+                        总结
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="3.6" data-path="day03/section6.html">
+            
+                
+                    <a href="../day03/section6.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.6.</b>
+                        
+                        每日作业
+                    </a>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="4" data-path="day04/index.html">
+            
+                
+                    <a href="../day04/index.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.</b>
+                        
+                        循环神经网络
+                    </a>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="4.1" data-path="day04/section1.html">
+            
+                
+                    <a href="../day04/section1.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.1.</b>
+                        
+                        循环神经网络
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="4.2" data-path="day04/section2.html">
+            
+                
+                    <a href="../day04/section2.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.2.</b>
+                        
+                        词嵌入与NLP
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="4.3" data-path="day04/section3.html">
+            
+                
+                    <a href="../day04/section3.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.3.</b>
+                        
+                        seq2seq与Attention机制
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="4.4" data-path="day04/section4.html">
+            
+                
+                    <a href="../day04/section4.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.4.</b>
+                        
+                        总结
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="4.5" data-path="day04/section5.html">
+            
+                
+                    <a href="../day04/section5.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.5.</b>
+                        
+                        每日作业
+                    </a>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="5" data-path="day05/index.html">
+            
+                
+                    <a href="../day05/index.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.</b>
+                        
+                        高级主题
+                    </a>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="5.1" data-path="day05/section1.html">
+            
+                
+                    <a href="../day05/section1.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.1.</b>
+                        
+                        生成对抗网络(GAN)
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="5.2" data-path="day05/section2.html">
+            
+                
+                    <a href="../day05/section2.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.2.</b>
+                        
+                        自动编码器
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="5.3" data-path="day05/section3.html">
+            
+                
+                    <a href="../day05/section3.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.3.</b>
+                        
+                        CapsuleNet
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="5.4" data-path="day05/section4.html">
+            
+                
+                    <a href="../day05/section4.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.4.</b>
+                        
+                        总结
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="5.5" data-path="day05/section5.html">
+            
+                
+                    <a href="../day05/section5.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.5.</b>
+                        
+                        每日作业
+                    </a>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+
+            
+            <li class="divider"></li>
+            <li>
+                <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+                    Published with GitBook
+                </a>
+            </li>
+            
+        </ul>
+    </nav>
+</div>
+
+    <div class="book-body">
+        <div class="body-inner">
+            <div class="book-header" role="navigation">
+    <!-- Actions Left -->
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="../" >在职高新课-深度学习</a>
+    </h1>
+</div>
+
+            <div class="page-wrapper" tabindex="-1" role="main">
+                <div class="page-inner">
+                
+                
+                    <section class="normal" id="section-">
+                    
+                        <h1 id="35-cnn&#x7F51;&#x7EDC;&#x5B9E;&#x6218;&#x6280;&#x5DE7;">3.5 CNN&#x7F51;&#x7EDC;&#x5B9E;&#x6218;&#x6280;&#x5DE7;</h1>
+<h2 id="&#x5B66;&#x4E60;&#x76EE;&#x6807;">&#x5B66;&#x4E60;&#x76EE;&#x6807;</h2>
+<ul>
+<li>&#x76EE;&#x6807;<ul>
+<li>&#x4E86;&#x89E3;&#x8FC1;&#x79FB;&#x5B66;&#x4E60;&#x4EE5;&#x53CA;&#x6280;&#x5DE7;</li>
+</ul>
+</li>
+<li>&#x5E94;&#x7528;<ul>
+<li>&#x65E0;</li>
+</ul>
+</li>
+</ul>
+<p>&#x6211;&#x4EEC;&#x6765;&#x770B;&#x4E00;&#x4E2A;&#x4E2A;&#x95EE;&#x9898;&#x5982;&#x679C;&#x6211;&#x4EEC;&#x8981;&#x505A;&#x4E00;&#x4E2A;&#x5177;&#x4F53;&#x573A;&#x666F;&#x7684;&#x8BA1;&#x7B97;&#x673A;&#x89C6;&#x89C9;&#x4EFB;&#x52A1;&#xFF0C;&#x90A3;&#x4E48;&#x4ECE;&#x5934;&#x5F00;&#x59CB;&#x8BAD;&#x7EC3;&#x4E00;&#x4E2A;&#x7F51;&#x7EDC;&#x662F;&#x5408;&#x9002;&#x7684;&#x9009;&#x62E9;&#x5417;&#xFF1F;&#x600E;&#x4E48;&#x6837;&#x624D;&#x80FD;&#x907F;&#x514D;&#x6D6A;&#x8D39;&#x8FC7;&#x591A;&#x7684;&#x8BA1;&#x7B97;&#x65F6;&#x95F4;&#xFF1F;</p>
+<h3 id="351-&#x8FC1;&#x79FB;&#x5B66;&#x4E60;transfer-learning">3.5.1 &#x8FC1;&#x79FB;&#x5B66;&#x4E60;(Transfer Learning)</h3>
+<h4 id="3511-&#x4ECB;&#x7ECD;">3.5.1.1 &#x4ECB;&#x7ECD;</h4>
+<ul>
+<li>&#x5B9A;&#x4E49;<ul>
+<li>&#x8FC1;&#x79FB;&#x5B66;&#x4E60;&#x5C31;&#x662F;<strong>&#x5229;&#x7528;&#x6570;&#x636E;&#x3001;&#x4EFB;&#x52A1;&#x6216;&#x6A21;&#x578B;&#x4E4B;&#x95F4;&#x7684;&#x76F8;&#x4F3C;&#x6027;&#xFF0C;&#x5C06;&#x5728;&#x65E7;&#x7684;&#x9886;&#x57DF;&#x5B66;&#x4E60;&#x8FC7;&#x6216;&#x8BAD;&#x7EC3;&#x597D;&#x7684;&#x6A21;&#x578B;&#xFF0C;&#x5E94;&#x7528;&#x4E8E;&#x65B0;&#x7684;&#x9886;&#x57DF;&#x8FD9;&#x6837;&#x7684;&#x4E00;&#x4E2A;&#x8FC7;&#x7A0B;&#x3002;</strong></li>
+<li>&#x4E24;&#x4E2A;&#x4EFB;&#x52A1;&#x7684;&#x8F93;&#x5165;&#x5C5E;&#x4E8E;&#x540C;&#x4E00;&#x6027;&#x8D28;&#xFF1A;&#x8981;&#x4E48;&#x540C;&#x662F;&#x56FE;&#x50CF;&#x3001;&#x8981;&#x4E48;&#x540C;&#x662F;&#x8BED;&#x97F3;&#x6216;&#x5176;&#x4ED6;</li>
+</ul>
+</li>
+</ul>
+<p>&#x8FC1;&#x79FB;&#x5B66;&#x4E60;&#x5230;&#x5E95;&#x5728;&#x4EC0;&#x4E48;&#x60C5;&#x51B5;&#x4E0B;&#x4F7F;&#x7528;&#x5462;&#xFF1F;&#x6709;&#x4E24;&#x4E2A;&#x65B9;&#x9762;&#x9700;&#x8981;&#x6211;&#x4EEC;&#x8003;&#x8651;&#x7684;</p>
+<ul>
+<li>1&#x3001;&#x5F53;&#x6211;&#x4EEC;&#x6709;&#x6D77;&#x91CF;&#x7684;&#x6570;&#x636E;&#x8D44;&#x6E90;&#x65F6;&#xFF0C;&#x53EF;&#x4EE5;&#x4E0D;&#x9700;&#x8981;&#x8FC1;&#x79FB;&#x5B66;&#x4E60;&#xFF0C;<strong>&#x673A;&#x5668;&#x5B66;&#x4E60;&#x7CFB;&#x7EDF;&#x5F88;&#x5BB9;&#x6613;&#x4ECE;&#x6D77;&#x91CF;&#x6570;&#x636E;&#x4E2D;&#x5B66;&#x4E60;&#x5230;&#x4E00;&#x4E2A;&#x9C81;&#x68D2;&#x6027;&#x5F88;&#x5F3A;&#x7684;&#x6A21;&#x578B;&#x3002;</strong>&#x4F46;&#x901A;&#x5E38;&#x60C5;&#x51B5;&#x4E0B;&#xFF0C;&#x6211;&#x4EEC;&#x9700;&#x8981;&#x7814;&#x7A76;&#x7684;&#x9886;&#x57DF;&#x53EF;&#x83B7;&#x5F97;&#x7684;&#x6570;&#x636E;&#x6781;&#x4E3A;&#x6709;&#x9650;&#xFF0C;&#x5728;&#x5C11;&#x91CF;&#x7684;&#x8BAD;&#x7EC3;&#x6837;&#x672C;&#x4E0A;&#x7CBE;&#x5EA6;&#x6781;&#x9AD8;&#xFF0C;&#x4F46;&#x662F;&#x6CDB;&#x5316;&#x6548;&#x679C;&#x6781;&#x5DEE;&#x3002;</li>
+<li>2&#x3001;&#x8BAD;&#x7EC3;&#x6210;&#x672C;&#xFF0C;&#x5F88;&#x5C11;&#x53BB;&#x4ECE;&#x5934;&#x5F00;&#x59CB;&#x8BAD;&#x7EC3;&#x4E00;&#x6574;&#x4E2A;&#x6DF1;&#x5EA6;&#x5377;&#x79EF;&#x7F51;&#x7EDC;&#xFF0C;&#x4ECE;&#x5934;&#x5F00;&#x59CB;&#x8BAD;&#x7EC3;&#x4E00;&#x4E2A;&#x5377;&#x79EF;&#x7F51;&#x7EDC;&#x901A;&#x5E38;&#x9700;&#x8981;&#x8F83;&#x957F;&#x65F6;&#x95F4;&#x4E14;&#x4F9D;&#x8D56;&#x4E8E;&#x5F3A;&#x5927;&#x7684; GPU &#x8BA1;&#x7B97;&#x8D44;&#x6E90;&#x3002;</li>
+</ul>
+<h4 id="3512-&#x65B9;&#x6CD5;">3.5.1.2 &#x65B9;&#x6CD5;</h4>
+<ul>
+<li>&#x6700;&#x5E38;&#x89C1;&#x7684;&#x79F0;&#x547C;&#x53EB;&#x505A;fine tuning,&#x5373;&#x5FAE;&#x8C03;<ul>
+<li>&#x5DF2;&#x8BAD;&#x7EC3;&#x597D;&#x7684;&#x6A21;&#x578B;&#xFF0C;&#x79F0;&#x4E4B;&#x4E3A;Pre-trained model</li>
+</ul>
+</li>
+</ul>
+<p>&#x901A;&#x5E38;&#x6211;&#x4EEC;&#x9700;&#x8981;&#x52A0;&#x8F7D;&#x4EE5;&#x8BAD;&#x7EC3;&#x597D;&#x7684;&#x6A21;&#x578B;&#xFF0C;&#x8FD9;&#x4E9B;&#x53EF;&#x4EE5;&#x662F;&#x4E00;&#x4E9B;&#x673A;&#x6784;&#x6216;&#x8005;&#x516C;&#x53F8;&#x5728;ImageNet&#x7B49;&#x7C7B;&#x4F3C;&#x6BD4;&#x8D5B;&#x4E0A;&#x8FDB;&#x884C;&#x8BAD;&#x7EC3;&#x8FC7;&#x7684;&#x6A21;&#x578B;&#x3002;TensorFlow&#x540C;&#x6837;&#x4E5F;&#x63D0;&#x4F9B;&#x4E86;&#x76F8;&#x5173;&#x6A21;&#x578B;&#x5730;&#x5740;&#xFF1A;<a href="https://github.com/tensorflow/models/tree/master/research/slim" target="_blank">https://github.com/tensorflow/models/tree/master/research/slim</a></p>
+<p>&#x4E0B;&#x56FE;&#x662F;&#x5176;&#x4E2D;&#x5305;&#x542B;&#x7684;&#x4E00;&#x4E9B;&#x6A21;&#x578B;&#xFF1A;</p>
+<p><img src="../images/&#x9884;&#x8BAD;&#x7EC3;&#x6A21;&#x578B;.png" alt=""></p>
+<h4 id="3513-&#x8FC7;&#x7A0B;">3.5.1.3 &#x8FC7;&#x7A0B;</h4>
+<p>&#x8FD9;&#x91CC;&#x6211;&#x4EEC;&#x4E3E;&#x4E00;&#x4E2A;&#x4F8B;&#x5B50;&#xFF0C;&#x5047;&#x8BBE;&#x6709;&#x4E24;&#x4E2A;&#x4EFB;&#x52A1;A&#x548C;B&#xFF0C;&#x4EFB;&#x52A1; A &#x62E5;&#x6709;&#x6D77;&#x91CF;&#x7684;&#x6570;&#x636E;&#x8D44;&#x6E90;&#x4E14;&#x5DF2;&#x8BAD;&#x7EC3;&#x597D;&#xFF0C;&#x4F46;&#x5E76;&#x4E0D;&#x662F;&#x6211;&#x4EEC;&#x7684;&#x76EE;&#x6807;&#x4EFB;&#x52A1;&#xFF0C;&#x4EFB;&#x52A1; B &#x662F;&#x6211;&#x4EEC;&#x7684;&#x76EE;&#x6807;&#x4EFB;&#x52A1;&#x3002;&#x4E0B;&#x9762;&#x7684;&#x7F51;&#x7EDC;&#x6A21;&#x578B;&#x5047;&#x8BBE;&#x662F;&#x5DF2;&#x8BAD;&#x7EC3;&#x597D;&#x7684;1000&#x4E2A;&#x7C7B;&#x522B;&#x6A21;&#x578B;</p>
+<p><img src="../images/&#x8FC1;&#x79FB;&#x8FC7;&#x7A0B;1.png" alt=""></p>
+<p>&#x800C;B&#x4EFB;&#x52A1;&#x5047;&#x8BBE;&#x662F;&#x67D0;&#x4E2A;&#x5177;&#x4F53;&#x573A;&#x666F;&#x5982;250&#x4E2A;&#x7C7B;&#x522B;&#x7684;&#x98DF;&#x7269;&#x8BC6;&#x522B;&#xFF0C;&#x90A3;&#x4E48;&#x8BE5;&#x600E;&#x4E48;&#x53BB;&#x505A;</p>
+<ul>
+<li>1&#x3001;&#x5EFA;&#x7ACB;&#x81EA;&#x5DF1;&#x7684;&#x7F51;&#x7EDC;&#xFF0C;&#x5728;A&#x7684;&#x57FA;&#x7840;&#x4E0A;&#xFF0C;&#x4FEE;&#x6539;&#x6700;&#x540E;&#x8F93;&#x51FA;&#x7ED3;&#x6784;&#xFF0C;&#x5E76;&#x52A0;&#x8F7D;A&#x7684;&#x6A21;&#x578B;&#x53C2;&#x6570;</li>
+<li>2&#x3001;&#x6839;&#x636E;&#x6570;&#x636E;&#x5927;&#x5C0F;&#x8C03;&#x6574;<ul>
+<li>&#x5982;&#x679C;B&#x4EFB;&#x52A1;&#x6570;&#x636E;&#x91CF;&#x5C0F;&#xFF0C;&#x90A3;&#x4E48;&#x6211;&#x4EEC;&#x53EF;&#x4EE5;&#x9009;&#x62E9;&#x5C06;A&#x6A21;&#x578B;&#x7684;&#x6240;&#x6709;&#x7684;&#x5C42;&#x8FDB;&#x884C;freeze(&#x53EF;&#x4EE5;&#x901A;&#x8FC7;Tensorflow&#x7684;trainable=False&#x53C2;&#x6570;&#x5B9E;&#x73B0;)&#xFF0C;&#x800C;&#x5269;&#x4E0B;&#x7684;&#x8F93;&#x51FA;&#x5C42;&#x90E8;&#x5206;&#x53EF;&#x4EE5;&#x9009;&#x62E9;&#x8C03;&#x6574;&#x53C2;&#x6570;&#x8BAD;&#x7EC3;</li>
+<li>&#x5982;&#x679C;B&#x4EFB;&#x52A1;&#x7684;&#x6570;&#x636E;&#x91CF;&#x5927;&#xFF0C;&#x90A3;&#x4E48;&#x6211;&#x4EEC;&#x53EF;&#x4EE5;&#x5C06;A&#x4E2D;&#x4E00;&#x534A;&#x6216;&#x8005;&#x5927;&#x90E8;&#x5206;&#x7684;&#x5C42;&#x8FDB;&#x884C;freeze,&#x800C;&#x5269;&#x4E0B;&#x90E8;&#x5206;&#x7684;layer&#x53EF;&#x4EE5;&#x8FDB;&#x884C;&#x65B0;&#x4EFB;&#x52A1;&#x6570;&#x636E;&#x57FA;&#x7840;&#x4E0A;&#x7684;&#x5FAE;&#x8C03;</li>
+</ul>
+</li>
+</ul>
+
+                    
+                    </section>
+                
+                
+                </div>
+            </div>
+        </div>
+
+        
+        <a href="../day03/section3.html" class="navigation navigation-prev " aria-label="Previous page: 经典分类网络结构"><i class="fa fa-angle-left"></i></a>
+        
+        
+        <a href="../day03/section5.html" class="navigation navigation-next " aria-label="Next page: 总结"><i class="fa fa-angle-right"></i></a>
+        
+    </div>
+</div>
+
+        
+<script src="../gitbook/app.js"></script>
+
+    
+    <script src="../gitbook/plugins/gitbook-plugin-search/lunr.min.js"></script>
+    
+
+    
+    <script src="../gitbook/plugins/gitbook-plugin-search/search.js"></script>
+    
+
+    
+    <script src="../gitbook/plugins/gitbook-plugin-sharing/buttons.js"></script>
+    
+
+    
+    <script src="../gitbook/plugins/gitbook-plugin-fontsettings/buttons.js"></script>
+    
+
+    
+    <script src="../gitbook/plugins/gitbook-plugin-livereload/plugin.js"></script>
+    
+
+<script>
+require(["gitbook"], function(gitbook) {
+    var config = {"katex":{},"highlight":{},"search":{"maxIndexSize":1000000},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"livereload":{}};
+    gitbook.start(config);
+});
+</script>
+
+        
+    </body>
+    
+</html>
