@@ -88,6 +88,7 @@ nav:
     - 强化学习基本概念2: blogs/强化学习2(价值学习).md
     - 强化学习基本概念3: blogs/强化学习3(策略学习).md
     - 强化学习基本概念4: blogs/强化学习4(Actor-Critic算法).md
+    - 普通用户权限运行Docker: blogs/普通用户权限运行Docker.md
   - 关于: about.md
 
     
