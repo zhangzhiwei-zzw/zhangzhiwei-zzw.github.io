@@ -1,6 +1,6 @@
 # [Info]
 site_name: 张志威的个人主页 # 左上角标题
-site_url: https://zhangzhiwei-bit.github.io
+site_url: https://zhangzhiwei-zzw.github.io
 site_author: 张志威
 site_description: 张志威的个人主页
 
@@ -34,8 +34,8 @@ theme:
 edit_uri: edit/main/docs # 编辑按钮跳转的链接
 
 ## [top-right corner]
-repo_url: https://github.com/zhangzhiwei-bit/zhangzhiwei-bit.github.io # 右上角点击跳转的链接
-repo_name: zhangzhiwei-bit.github.io # 右上角的名字
+repo_url: https://github.com/zhangzhiwei-zzw/zhangzhiwei-zzw.github.io # 右上角点击跳转的链接
+repo_name: zhangzhiwei-zzw.github.io # 右上角的名字
 ## [bottom-left corner]
 copyright: Copyright &copy; 张志威
 ## [bottom-right corner]
@@ -45,8 +45,8 @@ extra:
       link: https://space.bilibili.com/448214169
       name: Bilibili  # 鼠标悬浮提示
     - icon: fontawesome/brands/github
-      link: https://github.com/zhangzhiwei-bit
-      name: GitHub | zhangzhiwei-bit
+      link: https://github.com/zhangzhiwei-zzw
+      name: GitHub | zhangzhiwei-zzw
       
 
 # [Navigtion]
