@@ -21,7 +21,7 @@ jobs:
       - name: base
         uses: lowlighter/metrics@latest
         with:
-          filename: github-metrics/base.svg
+          filename: docs/github-metrics/base.svg
           # Your GitHub token
           token: ${{ secrets.METRICS_TOKEN }}
           # Options
@@ -48,7 +48,7 @@ jobs:
       - name: Full-year calendar
         uses: lowlighter/metrics@latest
         with:
-          filename: github-metrics/isocalendar.fullyear.svg
+          filename: docs/github-metrics/isocalendar.fullyear.svg
           token: ${{ secrets.METRICS_TOKEN }}
           # 不添加基础信息
           base: ""
@@ -61,7 +61,7 @@ jobs:
       - name: Indepth analysis
         uses: lowlighter/metrics@latest
         with:
-          filename: github-metrics/languages.indepth.svg
+          filename: docs/github-metrics/languages.indepth.svg
           token: ${{ secrets.METRICS_TOKEN }}
           base: ""
           plugin_languages: yes
@@ -77,7 +77,7 @@ jobs:
       - name: Using chartist charts
         uses: lowlighter/metrics@latest
         with:
-          filename: github-metrics/stargazers.chartist.svg
+          filename: docs/github-metrics/stargazers.chartist.svg
           token: ${{ secrets.METRICS_TOKEN }}
           base: ""
           plugin_stargazers: yes
@@ -87,7 +87,7 @@ jobs:
       - name: Recently starred
         uses: lowlighter/metrics@latest
         with:
-          filename: github-metrics/stars.svg
+          filename: docs/github-metrics/stars.svg
           token: ${{ secrets.METRICS_TOKEN }}
           base: ""
           plugin_stars: yes
@@ -97,7 +97,7 @@ jobs:
       - name: Recent activity charts
         uses: lowlighter/metrics@latest
         with:
-          filename: github-metrics/habits.charts.svg
+          filename: docs/github-metrics/habits.charts.svg
           token: ${{ secrets.METRICS_TOKEN }}
           base: ""
           plugin_habits: yes
@@ -109,7 +109,7 @@ jobs:
       - name: Indepth analysis
         uses: lowlighter/metrics@latest
         with:
-          filename: github-metrics/followup.indepth.svg
+          filename: docs/github-metrics/followup.indepth.svg
           token: ${{ secrets.METRICS_TOKEN }}
           base: ""
           plugin_followup: yes
@@ -119,7 +119,7 @@ jobs:
       - name: Comment reactions
         uses: lowlighter/metrics@latest
         with:
-          filename: github-metrics/reactions.svg
+          filename: docs/github-metrics/reactions.svg
           token: ${{ secrets.METRICS_TOKEN }}
           base: ""
           plugin_reactions: yes
@@ -130,7 +130,7 @@ jobs:
       - name: Followers
         uses: lowlighter/metrics@latest
         with:
-          filename: github-metrics/people.followers.svg
+          filename: docs/github-metrics/people.followers.svg
           token: ${{ secrets.METRICS_TOKEN }}
           base: ""
           plugin_people: yes
@@ -142,7 +142,7 @@ jobs:
       - name: Pinned repositories
         uses: lowlighter/metrics@latest
         with:
-          filename: github-metrics/repositories.pinned.svg
+          filename: docs/github-metrics/repositories.pinned.svg
           token: ${{ secrets.METRICS_TOKEN }}
           base: ""
           plugin_repositories: yes
@@ -152,7 +152,7 @@ jobs:
       - name: GitHub Discussions
         uses: lowlighter/metrics@latest
         with:
-          filename: github-metrics/discussions.svg
+          filename: docs/github-metrics/discussions.svg
           token: ${{ secrets.METRICS_TOKEN }}
           base: ""
           plugin_discussions: yes
@@ -162,7 +162,7 @@ jobs:
       - name: Full history calendar
         uses: lowlighter/metrics@latest
         with:
-          filename: github-metrics/calendar.full.svg
+          filename: docs/github-metrics/calendar.full.svg
           token: ${{ secrets.METRICS_TOKEN }}
           base: ""
           plugin_calendar: yes
@@ -172,7 +172,7 @@ jobs:
       - name: Compact display
         uses: lowlighter/metrics@latest
         with:
-          filename: github-metrics/achievements.compact.svg
+          filename: docs/github-metrics/achievements.compact.svg
           token: ${{ secrets.METRICS_TOKEN }}
           base: ""
           plugin_achievements: yes
@@ -186,7 +186,7 @@ jobs:
       - name: Recent activity
         uses: lowlighter/metrics@latest
         with:
-          filename: github-metrics/activity.svg
+          filename: docs/github-metrics/activity.svg
           token: ${{ secrets.METRICS_TOKEN }}
           base: ""
           plugin_activity: yes
@@ -198,7 +198,7 @@ jobs:
       - name: Top answers from stackoverflow
         uses: lowlighter/metrics@latest
         with:
-          filename: github-metrics/stackoverflow.svg
+          filename: docs/github-metrics/stackoverflow.svg
           token: NOT_NEEDED
           base: ""
           plugin_stackoverflow: yes
@@ -210,7 +210,7 @@ jobs:
       - name: WakaTime
         uses: lowlighter/metrics@latest
         with:
-          filename: github-metrics/wakatime.svg
+          filename: docs/github-metrics/wakatime.svg
           token: NOT_NEEDED
           base: ""
           plugin_wakatime: yes

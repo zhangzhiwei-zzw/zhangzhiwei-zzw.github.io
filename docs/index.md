@@ -38,21 +38,21 @@
 ## About Me
 
 <picture>
-  <img src="../github-metrics/base.svg" alt="Metrics">
+  <img src="./github-metrics/base.svg" alt="Metrics">
 </picture>
 
 ## habits
 <picture>
-  <img src="../github-metrics/habits.charts.svg" alt="Metrics">
+  <img src="./github-metrics/habits.charts.svg" alt="Metrics">
 </picture>
 
 <picture>
-  <img src="../github-metrics/isocalendar.fullyear.svg" alt="Metrics">
+  <img src="./github-metrics/isocalendar.fullyear.svg" alt="Metrics">
 </picture>
 
 ## recent
 <picture>
-  <img src="../github-metrics/stars.svg" alt="Metrics">
+  <img src="./github-metrics/stars.svg" alt="Metrics">
 </picture>
 
 <p>&emsp;&emsp;我们正在让这个世界变得更加美好，通过代码的重复使用和延展构建完美体系。</p>
