@@ -28,9 +28,8 @@
   </div>
 
 
-![](https://raw.githubusercontent.com/zhangzhiwei-zzw/zhangzhiwei-zzw.github.io/main/docs/assets/github-contribution-grid-snake.svg)
 
-
+<div align="center"><img src="https://raw.githubusercontent.com/zhangzhiwei-zzw/zhangzhiwei-zzw.github.io/main/docs/assets/github-contribution-grid-snake.svg" /></div>
 
 <h1 align="center">🙋 Hello</h1>
 
