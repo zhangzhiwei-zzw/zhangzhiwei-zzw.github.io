@@ -30,20 +30,24 @@
 
 
 
-#  🙋 Hello
+
+
+<h1 align="center">🙋 Hello</h1>
 
 **我们正在让这个世界变得更加美好，通过代码的重复使用和延展构建完美体系。**
 
+<div align="center">
 <p>&emsp;&emsp;<strong>We're making the world a better place. Through constructing elegant hierarchies for maximum code reuse and extensibility.</strong></p>
+</div>
 
 
-## About Me
 
+<h2 align="center">About me</h1>
 <picture>
   <img src="./github-metrics/base.svg" alt="Metrics">
 </picture>
 
-## habits
+<h1 align="center">Habits</h1>
 <picture>
   <img src="github-metrics/habits.charts.svg" alt="Metrics">
 </picture>
@@ -52,16 +56,11 @@
   <img src="github-metrics/isocalendar.fullyear.svg" alt="Metrics">
 </picture>
 
-## recent
+<h2 align="center">Recent</h1>
+
 <picture>
   <img src="github-metrics/stars.svg" alt="Metrics">
 </picture>
-
-<p>&emsp;&emsp;我们正在让这个世界变得更加美好，通过代码的重复使用和延展构建完美体系。</p>
-
-<p>&emsp;&emsp;<strong>We're making the world a better place. Through constructing elegant hierarchies for maximum code reuse and extensibility.</strong></p>
-
-
 
 
 
