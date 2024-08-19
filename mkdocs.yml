@@ -90,7 +90,7 @@ nav:
     - 强化学习基本概念4: blogs/强化学习4(Actor-Critic算法).md
     - 普通用户权限运行Docker: blogs/普通用户权限运行Docker.md
     - Docker常用命令: blogs/Docker常用命令.md
-    - DWA局部路径规划: blogs/DWA局部路径规划.md
+    - DWA局部路径规划: blogs/DWA局部路径规划算法.md
   - 关于: about.md
 
     
