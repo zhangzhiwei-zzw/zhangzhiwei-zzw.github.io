@@ -9,18 +9,24 @@
 
 ![差速模型](./imgs/差速模型.png)
 
-小车在$ \Delta t$时间内走了多远：$ \Delta s = v*\Delta t $，变成小车的$ x,y $坐标为：
+小车在$\Delta t$时间内走了多远：$\Delta s = v*\Delta t $，变成小车的$ x,y $坐标为：
 $$
 \Delta x = v \Delta tcos(\theta_t)
+
 \\
+
 \Delta y = v \Delta tsin(\theta_t)
 $$
 那么小车的下个状态的位置为：
 $$
 x = x + v \Delta tcos(\theta_t)
+
 \\
+
 y = y + v \Delta tsin(\theta_t)
+
 \\
+
 \theta_t = \theta_t+\omega \Delta t 
 $$
 
@@ -30,21 +36,29 @@ $$
 那么由y方向速度 产生小车的x,y坐标变化为：
 $$
 \Delta x_y = - v_y \Delta t sin(\theta_t)
+
 \\
+
 \Delta y_y =  v_y \Delta t cos(\theta_t)
 $$
 同理由x方向速度 产生小车的x,y坐标变化为：
 $$
 \Delta x_x = v_x \Delta t cos(\theta_t)
+
 \\
+
 \Delta y_x = v_x \Delta t sin(\theta_t)
 $$
 所以小车下个状态的位置为：
 $$
 x = x +  v_x \Delta t cos(\theta_t)- v_y \Delta t sin(\theta_t)
+
 \\
+
 y = y +  v_x \Delta t sin(\theta_t)+ v_y \Delta t cos(\theta_t)
+
 \\
+
 \theta_t = \theta_t+\omega\Delta_t
 $$
 ### 其他模型
@@ -58,7 +72,9 @@ $$
 假如小车的速度和角速度范围是：$v_x \in (5,20),\omega \in (0.1,1)$，那么接下来就需要对速度进行离散化，例如可以将速度的分辨率设置为0.1，角速度的分辨率设置为0.05，那么
 $$
 v_x = 5.1/5.2/5.3...
+
 \\
+
 \omega = 0.15/0.20/0.25...
 $$
 接下来利用速度和小车的运动学模型，就可以模拟推算出一段时间内小车的路径如下图所示。
@@ -76,9 +92,13 @@ $$
 其中为了避免不同单位之间量纲的误差，对其进行归一化，每一项除以每一项的总和。
 $$
 normal_head(i) = \frac{head(i)}{\sum_{i=1}^{n}head(i)}
+
 \\
+
 normal_dist(i) = \frac{dist(i)}{\sum_{i=1}^{n} dist(i)}
+
 \\
+
 normal_velocity(i) = \frac{velocity(i)}{\sum_{i=1}^{n} velocity(i)}
 $$
 还有就是三个权重$\alpha、\beta、\gamma$，可以根据实际情况进行调节，影响小车选取路径。
