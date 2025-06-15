@@ -92,6 +92,7 @@ nav:
     - Docker常用命令: blogs/Docker常用命令.md
     - DWA局部路径规划: blogs/DWA局部路径规划算法.md
     - nmcli命令使用: blogs/Linux下使用nmcli连接网络.md
+    - SSH端口转发: blogs/SSH设置端口转发.md
   - 关于: about.md
 
     
