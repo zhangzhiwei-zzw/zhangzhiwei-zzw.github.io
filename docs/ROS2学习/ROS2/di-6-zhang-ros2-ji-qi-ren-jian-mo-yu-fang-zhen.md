@@ -146,20 +146,33 @@
     - [6.5.3 xacro\_练习](di-6-zhang-ros2-ji-qi-ren-jian-mo-yu-fang-zhen/65-urdfyou-hua-xacro/653-xacroshi-yong-shi-li.md)
   + [6.6 本章小结](di-6-zhang-ros2-ji-qi-ren-jian-mo-yu-fang-zhen/66-ben-zhang-xiao-jie.md)
 * [Published with GitBook](https://www.gitbook.com)
+# [第6章 ROS2工具之可视化](.)
 
-# [第4章 ROS2工具之launch与rosbag2](.)
+# 第6章 ROS2工具之可视化
 
-# 第4章 ROS2工具之launch与rosbag2
-
-本章开始，将正式进入ROS2工具部分内容的介绍。之前我们已经多次使用到launch文件了，本章将系统性的介绍ROS2中的launch实现，除此之外还将介绍，ROS2中极其实用的工具——rosbag2，通过该工具可以实现话题消息的录制与回放。
+机器人系统运行之后，调用者应该如何与机器人交互呢？机器人还会产生诸多数据，比如：里程计、激光雷达、imu、GPS、导航规划的路径、自身实际的运行轨迹......等等各种消息，这些消息对于调用者而言是肉眼不可见的，那么应该如何转换成“可视化”的数据，让调用者可以以机器人的视角看世界呢？另外，人机交互过程中，机器人模型也是“可视化”的重要一环，在ROS2中如何实现机器人建模呢？针对上述问题，本章将会逐一给出解答。
 
 #### 本章概览
 
 | **章节** | **学习内容** | **学习收获** |
 | --- | --- | --- |
-| 4.1 启动文件 launch 简介 | launch文件的概念、作用、应用场景，以及不同类型的launch文件的基本实用流程。 | 能够明确什么情况下使用launch文件，以及如何编写不同格式的launch文件。 |
-| 4.2 launch之Python实现 | Python格式的launch文件实现语法。 | 可以使用Python编写复杂的launch文件。 |
-| 4.3 launch之xml、yaml实现 | xml、yaml格式的launch文件实现语法。 | 可以使用xml、yaml编写复杂的launch文件。 |
-| 4.4 录制回放工具——rosbag2 | 主要介绍rosbag2的概念、作用、应用场景，以及如何以命令或编码的方式使用rosbag2。 | 能够了解rosbag2的理论知识，并且可以通过命令或编码实现话题消息的录制与回放。 |
-| 4.5 本章小结 | 知识点汇总。 | 知识点回顾。 |
+| 6.1 可视化与机器人建模简介 | 可视化与机器人建模的概念、作用以及应用场景等。 | 初步了解rviz2与urdf的理论知识。 |
+| 6.2 rviz2 基本使用 | rviz2的安装、启动、界面与基本操作。 | 能够掌握rviz2的使用流程。 |
+| 6.3 rviz2集成URDF基本流程 | 介绍如何编写、加载urdf文件，以及如何在rviz2中集成机器人模型插件。 | 能够在rviz2中显示一个最简单的机器人模型。 |
+| 6.4 URDF使用语法 | URDF的具体使用语法介绍。 | 能够在rviz2中显示一个四轮机器人底盘，并且也可以自定义机器人模型。 |
+| 6.5 URDF优化\_xacro | xacro的具体使用语法介绍。 | 可以使用xacro简化urdf文件。 |
+| 6.6 本章小结 | 知识点汇总。 | 知识点回顾。 |
 
+#### 案例演示
+
+**案例1：**rviz2基本使用演示。
+
+![](assets/6.2rviz2基本使用示例.png)
+
+**案例2：**在rviz2中显示自定义机器人模型。
+
+![](assets/6.5.3xacro_练习.gif)
+
+# results matching ""
+
+# No results matching ""
