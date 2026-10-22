@@ -2,8 +2,8 @@ name: Generate Snake
 
 on:
   schedule:
-    # Daily at 08:20 in Asia/Shanghai.
-    - cron: '20 0 * * *'
+    # Monthly on day 1 at 08:00 in Asia/Shanghai.
+    - cron: '0 0 1 * *'
   workflow_dispatch:
 
 permissions:

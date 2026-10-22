@@ -4,8 +4,8 @@ name: GitHub Metrics
 
 on:
   schedule:
-    # Daily at 08:40 in Asia/Shanghai.
-    - cron: "40 0 * * *"
+    # Monthly on day 1 at 08:00 in Asia/Shanghai.
+    - cron: "0 0 1 * *"
     # https://docs.github.com/zh/actions/using-workflows/events-that-trigger-workflows#schedule
   workflow_dispatch:
   push:
