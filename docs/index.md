@@ -19,7 +19,6 @@
 
   <!-- profile logo 个人资料徽标 -->
   <div>
-    </a>&emsp;
     <a href="https://zhangzhiwei-zzw.github.io/"><img src="https://img.shields.io/badge/Website-博客-8c36db" /></a>&emsp;
     <a href="https://space.bilibili.com/448214169/"><img src="https://img.shields.io/badge/Bilibili-B站-ff69b4" /></a>&emsp;
     <!-- visitor -->
@@ -29,7 +28,7 @@
 
 
 
-<div align="center"><img src="https://raw.githubusercontent.com/zhangzhiwei-zzw/zhangzhiwei-zzw.github.io/main/docs/assets/github-contribution-grid-snake.svg" /></div>
+<div align="center"><img src="assets/github-contribution-grid-snake.svg" /></div>
 
 <h1 align="center">🙋 Hello</h1>
 
@@ -41,7 +40,7 @@
 
 
 
-<h2 align="center">About me</h1>
+<h2 align="center">About me</h2>
 <picture>
   <img src="./github-metrics/base.svg" alt="Metrics">
 </picture>
@@ -55,7 +54,7 @@
   <img src="github-metrics/isocalendar.fullyear.svg" alt="Metrics">
 </picture>
 
-<h2 align="center">Recent</h1>
+<h2 align="center">Recent</h2>
 
 <picture>
   <img src="github-metrics/stars.svg" alt="Metrics">

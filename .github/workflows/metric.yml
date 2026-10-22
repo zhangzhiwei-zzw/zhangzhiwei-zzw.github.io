@@ -4,22 +4,43 @@ name: GitHub Metrics
 
 on:
   schedule:
-    - cron: "0 0 1 * *"
+    # Daily at 08:40 in Asia/Shanghai.
+    - cron: "40 0 * * *"
     # https://docs.github.com/zh/actions/using-workflows/events-that-trigger-workflows#schedule
   workflow_dispatch:
-  push: {branches: ["master", "main"]}
+  push:
+    branches: [main]
+    paths-ignore:
+      - "docs/github-metrics/**"
+      - "docs/assets/github-contribution-grid-snake.*"
   
+concurrency:
+  group: github-metrics
+  cancel-in-progress: false
+
 jobs:
   github-metrics:
     runs-on: ubuntu-latest
-    environment: 
-      name: production
+    environment: production
     permissions:
       contents: write
     steps:
+      - name: Check optional credentials
+        id: credentials
+        env:
+          METRICS_TOKEN: ${{ secrets.METRICS_TOKEN }}
+          WAKATIME_TOKEN: ${{ secrets.WAKATIME_TOKEN }}
+        run: |
+          if [ -n "$METRICS_TOKEN" ]; then
+            echo "metrics=true" >> "$GITHUB_OUTPUT"
+          fi
+          if [ -n "$WAKATIME_TOKEN" ]; then
+            echo "wakatime=true" >> "$GITHUB_OUTPUT"
+          fi
       # 基础信息（顺带了几个小插件）
       - name: base
-        uses: lowlighter/metrics@latest
+        if: steps.credentials.outputs.metrics == 'true'
+        uses: lowlighter/metrics@v3.34
         with:
           filename: docs/github-metrics/base.svg
           # Your GitHub token
@@ -46,7 +67,8 @@ jobs:
           
       # 📅 Isometric commit calendar
       - name: Full-year calendar
-        uses: lowlighter/metrics@latest
+        if: steps.credentials.outputs.metrics == 'true'
+        uses: lowlighter/metrics@v3.34
         with:
           filename: docs/github-metrics/isocalendar.fullyear.svg
           token: ${{ secrets.METRICS_TOKEN }}
@@ -59,7 +81,8 @@ jobs:
 
       # 🈷️ Languages activity
       - name: Indepth analysis
-        uses: lowlighter/metrics@latest
+        if: steps.credentials.outputs.metrics == 'true'
+        uses: lowlighter/metrics@v3.34
         with:
           filename: docs/github-metrics/languages.indepth.svg
           token: ${{ secrets.METRICS_TOKEN }}
@@ -75,7 +98,8 @@ jobs:
 
       # ✨ Stargazers   
       - name: Using chartist charts
-        uses: lowlighter/metrics@latest
+        if: steps.credentials.outputs.metrics == 'true'
+        uses: lowlighter/metrics@v3.34
         with:
           filename: docs/github-metrics/stargazers.chartist.svg
           token: ${{ secrets.METRICS_TOKEN }}
@@ -85,7 +109,8 @@ jobs:
 
       # 🌟 Recently starred repositories
       - name: Recently starred
-        uses: lowlighter/metrics@latest
+        if: steps.credentials.outputs.metrics == 'true'
+        uses: lowlighter/metrics@v3.34
         with:
           filename: docs/github-metrics/stars.svg
           token: ${{ secrets.METRICS_TOKEN }}
@@ -95,7 +120,8 @@ jobs:
           
       # 💡 Coding habits and activity
       - name: Recent activity charts
-        uses: lowlighter/metrics@latest
+        if: steps.credentials.outputs.metrics == 'true'
+        uses: lowlighter/metrics@v3.34
         with:
           filename: docs/github-metrics/habits.charts.svg
           token: ${{ secrets.METRICS_TOKEN }}
@@ -103,11 +129,12 @@ jobs:
           plugin_habits: yes
           plugin_habits_facts: no
           plugin_habits_charts: yes
-          config_timezone: Europe/Paris
+          config_timezone: Asia/Shanghai
           
       # 🎟️ Follow-up of issues and pull requests 
       - name: Indepth analysis
-        uses: lowlighter/metrics@latest
+        if: steps.credentials.outputs.metrics == 'true'
+        uses: lowlighter/metrics@v3.34
         with:
           filename: docs/github-metrics/followup.indepth.svg
           token: ${{ secrets.METRICS_TOKEN }}
@@ -117,7 +144,8 @@ jobs:
           
       # 🎭 Comment reactions
       - name: Comment reactions
-        uses: lowlighter/metrics@latest
+        if: steps.credentials.outputs.metrics == 'true'
+        uses: lowlighter/metrics@v3.34
         with:
           filename: docs/github-metrics/reactions.svg
           token: ${{ secrets.METRICS_TOKEN }}
@@ -128,7 +156,8 @@ jobs:
 
       # 🧑‍🤝‍🧑 People    
       - name: Followers
-        uses: lowlighter/metrics@latest
+        if: steps.credentials.outputs.metrics == 'true'
+        uses: lowlighter/metrics@v3.34
         with:
           filename: docs/github-metrics/people.followers.svg
           token: ${{ secrets.METRICS_TOKEN }}
@@ -140,7 +169,8 @@ jobs:
           
       # 📓 Featured repositories
       - name: Pinned repositories
-        uses: lowlighter/metrics@latest
+        if: steps.credentials.outputs.metrics == 'true'
+        uses: lowlighter/metrics@v3.34
         with:
           filename: docs/github-metrics/repositories.pinned.svg
           token: ${{ secrets.METRICS_TOKEN }}
@@ -150,7 +180,8 @@ jobs:
 
       # 💬 Discussions
       - name: GitHub Discussions
-        uses: lowlighter/metrics@latest
+        if: steps.credentials.outputs.metrics == 'true'
+        uses: lowlighter/metrics@v3.34
         with:
           filename: docs/github-metrics/discussions.svg
           token: ${{ secrets.METRICS_TOKEN }}
@@ -160,7 +191,8 @@ jobs:
    
       # 📆 Commit calendar
       - name: Full history calendar
-        uses: lowlighter/metrics@latest
+        if: steps.credentials.outputs.metrics == 'true'
+        uses: lowlighter/metrics@v3.34
         with:
           filename: docs/github-metrics/calendar.full.svg
           token: ${{ secrets.METRICS_TOKEN }}
@@ -170,7 +202,8 @@ jobs:
 
       # 🏆 Achievements
       - name: Compact display
-        uses: lowlighter/metrics@latest
+        if: steps.credentials.outputs.metrics == 'true'
+        uses: lowlighter/metrics@v3.34
         with:
           filename: docs/github-metrics/achievements.compact.svg
           token: ${{ secrets.METRICS_TOKEN }}
@@ -184,7 +217,8 @@ jobs:
 
       # 📰 Recent activity
       - name: Recent activity
-        uses: lowlighter/metrics@latest
+        if: steps.credentials.outputs.metrics == 'true'
+        uses: lowlighter/metrics@v3.34
         with:
           filename: docs/github-metrics/activity.svg
           token: ${{ secrets.METRICS_TOKEN }}
@@ -194,25 +228,14 @@ jobs:
           plugin_activity_days: 0
           plugin_activity_filter: issue, pr, release, fork, review, ref/create
    
-      # 🗨️ Stack Overflow
-      - name: Top answers from stackoverflow
-        uses: lowlighter/metrics@latest
-        with:
-          filename: docs/github-metrics/stackoverflow.svg
-          token: NOT_NEEDED
-          base: ""
-          plugin_stackoverflow: yes
-          plugin_stackoverflow_user: 1
-          plugin_stackoverflow_sections: answers-top
-          plugin_stackoverflow_limit: 2
-
       # ⏰ WakaTime
       - name: WakaTime
-        uses: lowlighter/metrics@latest
+        if: steps.credentials.outputs.wakatime == 'true'
+        uses: lowlighter/metrics@v3.34
         with:
           filename: docs/github-metrics/wakatime.svg
           token: NOT_NEEDED
           base: ""
           plugin_wakatime: yes
           plugin_wakatime_sections: time, projects, projects-graphs, languages, languages-graphs, editors, os
-          plugin_wakatime_token: ${{ secrets.METRICS_TOKEN }}
+          plugin_wakatime_token: ${{ secrets.WAKATIME_TOKEN }}

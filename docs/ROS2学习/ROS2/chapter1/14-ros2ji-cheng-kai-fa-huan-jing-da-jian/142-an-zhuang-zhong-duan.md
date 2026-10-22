@@ -2,7 +2,7 @@
 
 在ROS2中，需要频繁的使用到终端，且可能需要同时开启多个窗口，推荐一款较为好用的终端：**Terminator。**效果如下：
 
-![](/assets/1.4.2teriminator.png)
+![](../../assets/1.4.2teriminator.png)
 
 #### 1.安装 {#1安装}
 

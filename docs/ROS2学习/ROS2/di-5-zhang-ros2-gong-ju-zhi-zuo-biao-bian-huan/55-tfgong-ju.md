@@ -32,7 +32,7 @@ ros2 run tf2_ros tf2_monitor
 
 运行结果：
 
-![](/assets/5.5tf2_monitor.PNG)
+![](../assets/5.5tf2_monitor.PNG)
 
 ##### 1.2打印指定坐标系的发布频率与网络延迟
 
@@ -44,7 +44,7 @@ ros2 run tf2_ros tf2_monitor camera laser
 
 运行结果：
 
-![](/assets/5.5tf2_monitor2.PNG)
+![](../assets/5.5tf2_monitor2.PNG)
 
 #### 2.tf2\_echo
 
@@ -58,7 +58,7 @@ ros2 run tf2_ros tf2_echo world turtle1
 
 运行结果：
 
-![](/assets/5.5tf2_echo.PNG)
+![](../assets/5.5tf2_echo.PNG)
 
 #### 3.view\_frames
 
@@ -72,5 +72,5 @@ ros2 run tf2_tools view_frames
 
 运行结果：将会生成 frames\_xxxx.gv 与 frames\_xxxx.pdf 文件，其中 xxxx 为时间戳。打开 pdf 文件显示如下内容：
 
-![](/assets/5.5view_frames.PNG)
+![](../assets/5.5view_frames.PNG)
 

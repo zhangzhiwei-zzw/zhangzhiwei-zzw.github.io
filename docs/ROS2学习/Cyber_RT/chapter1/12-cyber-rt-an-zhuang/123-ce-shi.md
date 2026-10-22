@@ -42,5 +42,5 @@ source cyber/setup.bash
 
 两个终端会分别输出日志信息，执行结果如下所示：
 
-![](/assets/001_演示1_talker_listener.gif)
+![](../../assets/001_演示1_talker_listener.gif)
 

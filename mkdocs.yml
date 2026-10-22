@@ -49,6 +49,11 @@ extra:
       name: GitHub | zhangzhiwei-zzw
       
 
+# Keep exported GitBook courses as standalone sites; retain Markdown as source only.
+exclude_docs: |
+  ROS2学习/ROS2/**/*.md
+  ROS2学习/Cyber_RT/**/*.md
+
 # [Navigtion]
 nav:
   - C/C++: 
@@ -74,7 +79,7 @@ nav:
     - ROS2-rviz2显示模型: ROS2学习/ROS2-rviz2显示模型.md
     - ROS2-URDF建模: ROS2学习/ROS2-URDF建模.md
     - tf2坐标变换工具: ROS2学习/tf2坐标变换工具.md
-    - ROS2课程资料: ROS2学习/ROS2/index.md
+    - ROS2课程资料: ROS2学习/ROS2/index.html
     - Apollo课程资料: ROS2学习/Cyber_RT/index.html
     
   - 博客: 
@@ -100,9 +105,9 @@ nav:
     
 # [Extensions]
 plugins:
-  - search: # 现在还不支持中文搜索 支持之后可以设置语言
-    # insider已经支持中文的分词搜索了 https://squidfunk.github.io/mkdocs-material/blog/2022/chinese-search-support/
+  - search:
       lang:
+        - zh
         - en
         - ja
   - tags # 给单篇文章添加标签 https://squidfunk.github.io/mkdocs-material/setup/setting-up-tags/?h=tags
@@ -118,12 +123,8 @@ markdown_extensions:
   - pymdownx.superfences # 代码块高亮插件
   - meta # 支持Markdown文件上方自定义标题标签等
 extra_javascript:
-  # latex支持
-  # check https://squidfunk.github.io/mkdocs-material/reference/mathjax/?h=math for more information
-  # notice `curl https://polyfill.io/v3/polyfill.min.js?features=es6 > docs/mkdocs/javascripts/polyfill.min.js && curl https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js > docs/mkdocs/javascripts/tex-mml-chtml.js` not works... because there are other resources that need to load
   - mkdocs/javascripts/mathjax.js
-  - https://polyfill.io/v3/polyfill.min.js?features=es6
-  - https://unpkg.com/mathjax@3/es5/tex-mml-chtml.js # https://cdn.bytedance.com/?query=mathjax&version=3.2.0
+  - https://cdn.jsdelivr.net/npm/mathjax@3.2.2/es5/tex-mml-chtml.js
 extra_css:
-  - mkdocs/css/no-footer.css # 不使用底部的翻页
-  - mkdocs/css/unordered-list-symbols.css # multiplt unordered list symbols
+  - mkdocs/css/no-footer.css
+  - mkdocs/css/unordered-list-symbols.css

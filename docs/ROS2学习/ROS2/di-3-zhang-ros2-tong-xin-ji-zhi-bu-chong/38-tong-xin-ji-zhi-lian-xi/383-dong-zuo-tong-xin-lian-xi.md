@@ -4,7 +4,7 @@
 
 **需求：**在turtlesim\_node节点的窗体中在指定位置生成一只新乌龟并可以输出两只乌龟之间的直线距离。
 
-![](/assets/3.8.1案例02_server_client.gif)
+![](../../assets/3.8.1案例02_server_client.gif)
 
 #### 2.案例分析
 

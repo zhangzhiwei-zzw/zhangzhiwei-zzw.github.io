@@ -35,7 +35,7 @@ locale  # 验证设置是否成果
 
 请打开软件与更新\(Software & Updates\)窗口，确保启动了universe存储库，以保证可以下载”社区维护的免费和开源软件“，操作示例如下：
 
-![](/assets/1.2.1启动universe存储库.png)
+![](../../assets/1.2.1启动universe存储库.png)
 
 ##### 方式2：命令行操作
 
@@ -147,9 +147,9 @@ sudo apt upgrade
 
 1.访问 [https://www.ipaddress.com/](https://www.ipaddress.com/) 并输入域名 **raw.githubusercontent.com**，查询 ip 地址。
 
-![](/assets/1.2.1域名IP地址查询1.PNG)
+![](../../assets/1.2.1域名IP地址查询1.PNG)
 
-![](/assets/1.2.1域名IP地址查询2.PNG)
+![](../../assets/1.2.1域名IP地址查询2.PNG)
 
 查询到的ip地址可能有多个，记录任意一个地址即可。
 
@@ -161,7 +161,7 @@ sudo gedit /etc/hosts
 
 添加ip和域名映射到hosts文件，保存并退出。
 
-![](/assets/1.2.1域名IP地址映射.PNG)
+![](../../assets/1.2.1域名IP地址映射.PNG)
 
 操作完毕后，终端再次运行安装指令即可正常执行
 

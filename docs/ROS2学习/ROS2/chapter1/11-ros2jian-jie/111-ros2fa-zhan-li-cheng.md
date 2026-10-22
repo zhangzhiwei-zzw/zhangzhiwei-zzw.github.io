@@ -15,14 +15,14 @@ ROS发行版是一组版本化的ROS功能包，它类似于Linux发行版（例
 | **发行版** | **发布日期** | **标识** | **停止维护日期** |
 | :--- | :--- | :--- | :--- |
 | Iron Irwini | 2023 年 5 月 23 日 | 待定 | 2024 年 11 月 |
-| Humble Hawksbill | 2022 年 5 月 23 日 | ![](/assets/humble-small.png "谦虚的标志") | 2027 年 5 月 |
-| Galactic Geochelone | 2021 年 5 月 23 日 | ![](/assets/galactic-small.png "银河标志") | 2022 年 11 月 |
-| Foxy Fitzroy | 2020 年 6 月 5 日 | ![](/assets/foxy-small.png "狡猾的标志") | 2023 年 5 月 |
-| Eloquent Elusor | 2019 年 11 月 22 日 | ![](/assets/eloquent-small.png "雄辩的标志") | 2020 年 11 月 |
-| Dashing Diademata | 2019 年 5 月 31 日 | ![](/assets/dashing-small.png "潇洒的标志") | 2021 年 5 月 |
-| Crystal Clemmys | 2018 年 12 月 14 日 | ![](/assets/crystal-small.png "水晶标志") | 2019 年 12 月 |
-| Bouncy Bolson | 2018 年 7 月 2 日 | ![](/assets/bouncy-small.png "有弹性的标志") | 2019 年 7 月 |
-| Ardent Apalone | 2017 年 12 月 8 日 | ![](/assets/ardent-small.png "热情的标志") | 2018 年 12 月 |
+| Humble Hawksbill | 2022 年 5 月 23 日 | ![](../../assets/humble-small.png "谦虚的标志") | 2027 年 5 月 |
+| Galactic Geochelone | 2021 年 5 月 23 日 | ![](../../assets/galactic-small.png "银河标志") | 2022 年 11 月 |
+| Foxy Fitzroy | 2020 年 6 月 5 日 | ![](../../assets/foxy-small.png "狡猾的标志") | 2023 年 5 月 |
+| Eloquent Elusor | 2019 年 11 月 22 日 | ![](../../assets/eloquent-small.png "雄辩的标志") | 2020 年 11 月 |
+| Dashing Diademata | 2019 年 5 月 31 日 | ![](../../assets/dashing-small.png "潇洒的标志") | 2021 年 5 月 |
+| Crystal Clemmys | 2018 年 12 月 14 日 | ![](../../assets/crystal-small.png "水晶标志") | 2019 年 12 月 |
+| Bouncy Bolson | 2018 年 7 月 2 日 | ![](../../assets/bouncy-small.png "有弹性的标志") | 2019 年 7 月 |
+| Ardent Apalone | 2017 年 12 月 8 日 | ![](../../assets/ardent-small.png "热情的标志") | 2018 年 12 月 |
 | beta3 | 2017 年 9 月 13 日 |  | 2017 年 12 月 |
 | beta2 | 2017 年 7 月 5 日 |  | 2017 年 9 月 |
 | beta1 | 2016 年 12 月 19 日 |  | 2017 年 7 月 |

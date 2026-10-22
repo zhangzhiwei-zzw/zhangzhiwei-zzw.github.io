@@ -46,7 +46,7 @@ ros2 run tf2_ros static_transform_publisher --x -0.5 --y 0 --z 0.4 --yaw 0 --rol
 
 右侧 Grid 中将以图形化的方式显示坐标变换关系。
 
-![](/assets/5.3.2rviz2查看坐标关系.gif)
+![](../../assets/5.3.2rviz2查看坐标关系.gif)
 
 
 

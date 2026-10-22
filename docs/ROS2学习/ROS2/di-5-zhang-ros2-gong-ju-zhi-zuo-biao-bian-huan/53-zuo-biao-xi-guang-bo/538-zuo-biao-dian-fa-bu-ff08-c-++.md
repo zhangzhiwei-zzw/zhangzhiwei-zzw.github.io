@@ -116,5 +116,5 @@ ros2 run cpp03_tf_broadcaster demo03_point_publisher
 
 参考 **5.3.2 静态广播器（命令）**内容启动并配置 rviz2，显示坐标变换后，再添加 PointStamped 插件并将其话题设置为 /point，最终显示结果与案例演示类似。
 
-![](/assets/5.3.8rviz2添加坐标点.gif)
+![](../../assets/5.3.8rviz2添加坐标点.gif)
 

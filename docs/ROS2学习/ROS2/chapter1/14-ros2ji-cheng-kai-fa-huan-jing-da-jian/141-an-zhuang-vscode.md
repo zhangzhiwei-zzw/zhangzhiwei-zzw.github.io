@@ -34,7 +34,7 @@ VSCode支持插件扩展，依赖于VSCode丰富多样的插件，可以大大�
 
 首先点击侧边栏的Extensions\(插件\)选项或者使用快捷键`Ctrl+Shift+X`打开插件窗口，本课程建议安装的插件如下：
 
-![](/assets/1.4.1vscode插件.PNG)
+![](../../assets/1.4.1vscode插件.PNG)
 
 当然，上述只是部分推荐插件，大家可以根据自身需求安装其他扩展。
 
@@ -42,7 +42,7 @@ VSCode支持插件扩展，依赖于VSCode丰富多样的插件，可以大大�
 
 在VSCode中，cpp文件中的`#include "rclcpp/rclcpp.hpp"`包含语句会抛出异常，这是因为没有设置VSCode配置文件中 includepath属性，可以按照如下步骤解决此问题：
 
-![](/assets/1.4.1配置includepath.gif)
+![](../../assets/1.4.1配置includepath.gif)
 
 1. 将鼠标移到错误提示语句，此时会出现弹窗；
 2. 点击弹窗中的快速修复，会有新的弹窗，再点击`编辑"includePath"设置`；

@@ -2,7 +2,7 @@
 
 整个ROS生态由通信（Plumbing）、工具（Tools）、功能（Capabilities）与社区（Community）四大部分组成。
 
-![](/assets/ROS组成体系.png)
+![](../../assets/ROS组成体系.png)
 
 #### 通信\(Plumbing\)
 

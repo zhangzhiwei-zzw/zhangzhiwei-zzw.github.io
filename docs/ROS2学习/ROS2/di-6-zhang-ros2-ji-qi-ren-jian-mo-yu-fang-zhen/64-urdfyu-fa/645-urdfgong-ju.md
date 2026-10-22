@@ -20,7 +20,7 @@ check_urdf demo05_exercise.urdf
 
 urdf 文件如无异常，将显示urdf中link的层级关系，如下图所示：
 
-![](/assets/6.4.5工具1check_urdf.PNG)
+![](../../assets/6.4.5工具1check_urdf.PNG)
 
 否则将会给出错误提示。
 
@@ -36,7 +36,7 @@ urdf_to_graphviz demo05_exercise.urdf
 
 当前目录下，将生成以urdf中robot名称命名的.pdf和.gv文件，打开pdf文件会显示如下图内容：
 
-![](/assets/6.4.5工具2urdf2pdf.PNG)
+![](../../assets/6.4.5工具2urdf2pdf.PNG)
 
 在上图中会以树形结构显示link与joint的关系。
 

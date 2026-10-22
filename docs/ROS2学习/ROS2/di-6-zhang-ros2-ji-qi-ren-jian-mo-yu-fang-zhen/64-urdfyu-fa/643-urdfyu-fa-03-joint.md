@@ -4,7 +4,7 @@
 
 urdf 中的 joint 标签用于描述机器人关节的运动学和动力学属性，还可以指定关节运动的安全极限，机器人的两个部件\(分别称之为 parent link 与 child link\)以”关节“的形式相连接，不同的关节有不同的运动形式: 旋转、滑动、固定、旋转速度、旋转角度限制....,比如:安装在底座上的轮子可以360度旋转，而摄像头则可能是完全固定在底座上。
 
-![](/assets/6.4.3urdf_joint.png)
+![](../../assets/6.4.3urdf_joint.png)
 
 #### 2.属性
 
@@ -89,7 +89,7 @@ urdf 中的 joint 标签用于描述机器人关节的运动学和动力学属�
 
 创建机器人模型，底盘为长方体，在长方体的前面添加一摄像头，摄像头可以沿着 Z 轴 360 度旋转。
 
-![](/assets/6.4.3urdf_joint.gif)
+![](../../assets/6.4.3urdf_joint.gif)
 
 ##### 2.实现
 
@@ -164,7 +164,7 @@ ros2 run joint_state_publisher_gui joint_state_publisher_gui
 
 前面实现的机器人模型是半沉到地下的，因为默认情况下: 底盘的中心点位于地图原点上，所以会导致这种情况产生，可以使用的优化策略，将初始 link 设置为一个尺寸极小的 link\(比如半径为 0.001m 的球体，或边长为 0.001m 的立方体\)，然后再在初始 link 上添加底盘等刚体，这样实现，虽然仍然存在初始link半沉的现象，但是基本可以忽略了，这个初始 link 一般称之为 base\_footprint。
 
-![](/assets/6.4.3urdf_basefootprint.gif)
+![](../../assets/6.4.3urdf_basefootprint.gif)
 
 ##### 2.实现
 

@@ -39,7 +39,7 @@ message Student {
 
 protobuf 中的数据类型与不同的编程语言存在一定的映射关系，具体可参考官方资料，如下：
 
-![](/assets/013_protobuf数据类型.png)
+![](../../assets/013_protobuf数据类型.png)
 
 ##### 3.字段名称
 
@@ -119,5 +119,5 @@ bazel build cyber/demo_base_proto/...
 
 在 /apollo/bazel-bin/cyber/demo\_base\_proto 下将生成可以被C++和Python调用的中间文件。
 
-![](/assets/014_protobuf中间文件.png)
+![](../../assets/014_protobuf中间文件.png)
 

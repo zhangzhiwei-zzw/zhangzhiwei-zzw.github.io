@@ -116,7 +116,7 @@ ros2 launch cpp06_urdf display.launch.py
 1. Global Options 中的 Fixed Frame 设置为 base\_link（和  urdf 文件中 link 标签的 name 一致）；
 2. 添加机器人模型插件，并将参数 Description Topic 的值设置为 /robot\_description，即可显示机器人模型。
 
-![](/assets/6.3.2rviz2显示机器人模型.gif)
+![](../../assets/6.3.2rviz2显示机器人模型.gif)
 
 **小提示：**
 

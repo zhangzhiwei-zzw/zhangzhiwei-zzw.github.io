@@ -34,7 +34,7 @@ echo "export ROS_DOMAIN_ID=6" >> ~/.bashrc
 
 ##### 演示
 
-![](/assets/3.1分布式示例.gif)
+![](../assets/3.1分布式示例.gif)
 
 #### 注意
 

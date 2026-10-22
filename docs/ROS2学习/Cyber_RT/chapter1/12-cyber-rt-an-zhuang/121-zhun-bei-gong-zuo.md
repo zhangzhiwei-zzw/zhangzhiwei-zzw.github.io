@@ -86,7 +86,7 @@ sudo systemctl start docker && sudo systemctl enable docker
 
 注意：安装时，可能会抛出异常
 
-![](/assets/004_安装准备工作_异常提示.PNG)
+![](../../assets/004_安装准备工作_异常提示.PNG)
 
 直接根据提示调用 sudo apt install curl 即可。
 
@@ -102,13 +102,13 @@ sudo docker run hello-world
 
 运行结果：
 
-![](/assets/005_安装准备工作_docker_helloworld.PNG)
+![](../../assets/005_安装准备工作_docker_helloworld.PNG)
 
 ##### 3.3 优化
 
 在上一步测试时，使用到了 sudo 权限，否则，可能会抛出异常，比如：
 
-![](/assets/006_安装准备工作_docker_权限异常.PNG)对此，我们可以进行优化，添加 docker 权限给当前用户，使用 docker 时可以免sudo，具体操作如下：
+![](../../assets/006_安装准备工作_docker_权限异常.PNG)对此，我们可以进行优化，添加 docker 权限给当前用户，使用 docker 时可以免sudo，具体操作如下：
 
 1. 创建  docker 用户组
 
