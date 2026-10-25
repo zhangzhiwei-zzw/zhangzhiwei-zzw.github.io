@@ -10,9 +10,22 @@ function replaceOnce(source, original, fixed, plugin) {
 }
 
 export function patchActivity(source) {
-  return replaceOnce(source,
+  source = replaceOnce(source,
     "commits = commits.filter(",
     "commits = (commits ?? []).filter(",
+    "Activity",
+  )
+  return replaceOnce(source,
+    "//See https://docs.github.com/en/free-pro-team@latest/developers/webhooks-and-events/github-event-types",
+    `// The Events API now returns abbreviated pull requests. Load their details
+          // from the official REST endpoint before Metrics reads author/title/body.
+          if (["PullRequestEvent", "PullRequestReviewEvent", "PullRequestReviewCommentEvent"].includes(type)
+              && (!payload.pull_request?.user || payload.pull_request.title === undefined || payload.pull_request.body === undefined)) {
+            const [owner, name] = repo.split("/")
+            const pull_number = payload.number ?? payload.pull_request?.number
+            const {data: pull_request} = await rest.pulls.get({owner, repo: name, pull_number})
+            payload = {...payload, pull_request}
+          }`,
     "Activity",
   )
 }

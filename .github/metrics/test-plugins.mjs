@@ -27,11 +27,23 @@ const issue = event("IssuesEvent", {action: "opened", issue: {
   user: {login: "owner"}, title: "A real issue", number: 12, body: "Issue body",
 }})
 
+const pullRequest = {
+  user: {login: "owner"}, title: "A real pull request", number: 7, body: "PR body",
+  additions: 4, deletions: 2, changed_files: 1, merged: true,
+}
+
 async function runActivity(events, filter = ["issue"], plugin = activity) {
-  return plugin({
+  const requested = []
+  const result = await plugin({
     login: "owner", q: {activity: true}, account: "user",
     data: {shared: {"repositories.skipped": [], "users.ignored": []}},
-    rest: {activity: {listEventsForAuthenticatedUser: async () => ({data: events})}},
+    rest: {
+      activity: {listEventsForAuthenticatedUser: async () => ({data: events})},
+      pulls: {get: async parameters => {
+        requested.push(parameters)
+        return {data: pullRequest}
+      }},
+    },
     imports: {
       metadata: {plugins: {activity: {
         enabled: () => true,
@@ -42,6 +54,7 @@ async function runActivity(events, filter = ["issue"], plugin = activity) {
       markdown: async text => text, format: {error: error => error},
     },
   })
+  return {...result, requested}
 }
 
 test("reproduce Activity failure before the patch", async () => {
@@ -65,6 +78,39 @@ test("legacy push events still retain real commit messages", async () => {
 
 test("empty activity remains a valid empty result", async () => {
   assert.deepEqual((await runActivity([])).events, [])
+})
+
+test("reproduce Activity failure on abbreviated pull requests", async () => {
+  const abbreviated = event("PullRequestEvent", {action: "closed", number: 7, pull_request: {id: 123}})
+  await assert.rejects(runActivity([abbreviated], ["pr"], await load(activitySource)), TypeError)
+})
+
+test("abbreviated pull requests use REST details and preserve merged status", async () => {
+  const abbreviated = event("PullRequestEvent", {action: "closed", number: 7, pull_request: {id: 123}})
+  const result = await runActivity([push(undefined), abbreviated], ["pr"])
+  assert.deepEqual(result.requested, [{owner: "owner", repo: "site", pull_number: 7}])
+  assert.equal(result.events[0].title, pullRequest.title)
+  assert.equal(result.events[0].action, "merged")
+  assert.deepEqual(result.events[0].lines, {added: 4, deleted: 2})
+})
+
+test("reviews and review comments hydrate abbreviated pull requests", async () => {
+  const result = await runActivity([
+    event("PullRequestReviewEvent", {review: {state: "approved"}, pull_request: {number: 7}}),
+    event("PullRequestReviewCommentEvent", {action: "created", pull_request: {number: 7},
+      comment: {body: "Real review comment", performed_via_github_app: null}}),
+  ], ["all"])
+  assert.deepEqual(result.events.map(({type}) => type), ["review", "comment"])
+  assert.ok(result.events.every(({title}) => title === pullRequest.title))
+  assert.equal(result.events[1].content, "Real review comment")
+})
+
+test("complete legacy pull requests do not trigger extra REST calls", async () => {
+  const result = await runActivity([event("PullRequestEvent", {
+    action: "opened", pull_request: pullRequest,
+  })], ["pr"])
+  assert.deepEqual(result.requested, [])
+  assert.equal(result.events[0].number, 7)
 })
 
 async function runAchievements(projectQuery) {
