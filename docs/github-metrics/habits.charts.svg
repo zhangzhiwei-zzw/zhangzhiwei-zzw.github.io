@@ -1,30 +1,73 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="480" height="60" class="">
-    <defs>
-        <style/>
-    </defs>
-    <style>@keyframes animation-gauge{0%{stroke-dasharray:0 329}}@keyframes animation-rainbow{0%,to{color:#7f00ff;fill:#7f00ff}14%{color:#a933ff;fill:#a933ff}29%{color:#007fff;fill:#007fff}43%{color:#00ff7f;fill:#00ff7f}57%{color:#ff0;fill:#ff0}71%{color:#ff7f00;fill:#ff7f00}86%{color:red;fill:red}}svg{font-family:-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif,Apple Color Emoji,Segoe UI Emoji;font-size:14px;color:#777}h2{margin:8px 0 2px;padding:0;color:#0366d6;font-weight:400;font-size:16px}h2 svg{fill:currentColor}section&gt;.field{margin-left:5px;margin-right:5px}.field{display:flex;align-items:center;margin-bottom:2px;white-space:nowrap}.field.wrap,.row{flex-wrap:wrap}.field svg{margin:0 8px;fill:#959da5;flex-shrink:0}.field.error{color:#cb2431}.field.error svg{fill:#cb2431}.row{display:flex}.row section{flex:1 1 0}:root{--color-calendar-graph-day-bg:#ebedf0;--color-calendar-graph-day-border:rgba(27,31,35,0.06);--color-calendar-graph-day-L1-bg:#9be9a8;--color-calendar-graph-day-L2-bg:#40c463;--color-calendar-graph-day-L3-bg:#30a14e;--color-calendar-graph-day-L4-bg:#216e39;--color-calendar-halloween-graph-day-L1-bg:#ffee4a;--color-calendar-halloween-graph-day-L2-bg:#ffc501;--color-calendar-halloween-graph-day-L3-bg:#fe9600;--color-calendar-halloween-graph-day-L4-bg:#03001c;--color-calendar-winter-graph-day-L1-bg:#0a3069;--color-calendar-winter-graph-day-L2-bg:#0969da;--color-calendar-winter-graph-day-L3-bg:#54aeff;--color-calendar-winter-graph-day-L4-bg:#b6e3ff;--color-calendar-graph-day-L4-border:rgba(27,31,35,0.06);--color-calendar-graph-day-L3-border:rgba(27,31,35,0.06);--color-calendar-graph-day-L2-border:rgba(27,31,35,0.06);--color-calendar-graph-day-L1-border:rgba(27,31,35,0.06)}#metrics-end{width:100%}</style>
-    <style/>
-    <foreignObject x="0" y="0" width="100%" height="100%">
-        <div xmlns="http://www.w3.org/1999/xhtml" xmlns:xlink="http://www.w3.org/1999/xlink" class="items-wrapper">
-            <section class="habits">
-                <h2 class="field wrap">
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="16" height="16">
-                        <path fill-rule="evenodd" d="M8 1.5c-2.363 0-4 1.69-4 3.75 0 .984.424 1.625.984 2.304l.214.253c.223.264.47.556.673.848.284.411.537.896.621 1.49a.75.75 0 01-1.484.211c-.04-.282-.163-.547-.37-.847a8.695 8.695 0 00-.542-.68c-.084-.1-.173-.205-.268-.32C3.201 7.75 2.5 6.766 2.5 5.25 2.5 2.31 4.863 0 8 0s5.5 2.31 5.5 5.25c0 1.516-.701 2.5-1.328 3.259-.095.115-.184.22-.268.319-.207.245-.383.453-.541.681-.208.3-.33.565-.37.847a.75.75 0 01-1.485-.212c.084-.593.337-1.078.621-1.489.203-.292.45-.584.673-.848.075-.088.147-.173.213-.253.561-.679.985-1.32.985-2.304 0-2.06-1.637-3.75-4-3.75zM6 15.25a.75.75 0 01.75-.75h2.5a.75.75 0 010 1.5h-2.5a.75.75 0 01-.75-.75zM5.75 12a.75.75 0 000 1.5h4.5a.75.75 0 000-1.5h-4.5z"/>
-                    </svg>
-                    Recent coding habits
-                </h2>
-                <div class="row">
-                    <section>
-                        <div class="field error">
-                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="16" height="16">
-                                <path fill-rule="evenodd" d="M2.343 13.657A8 8 0 1113.657 2.343 8 8 0 012.343 13.657zM6.03 4.97a.75.75 0 00-1.06 1.06L6.94 8 4.97 9.97a.75.75 0 101.06 1.06L8 9.06l1.97 1.97a.75.75 0 101.06-1.06L9.06 8l1.97-1.97a.75.75 0 10-1.06-1.06L8 6.94 6.03 4.97z"/>
-                            </svg>
-                            Unexpected error
-                        </div>
-                    </section>
-                </div>
-            </section>
-        </div>
-        <div xmlns="http://www.w3.org/1999/xhtml" id="metrics-end"></div>
-    </foreignObject>
+<svg xmlns="http://www.w3.org/2000/svg" width="520" height="390" viewBox="0 0 520 390" role="img" aria-labelledby="title description">
+<title id="title">Recent coding habits</title>
+<desc id="description">zhangzhiwei-zzw: 30 public pushes in the last 30 days. Hours and weekdays in Asia/Shanghai. Based on up to 300 recent public events.</desc>
+<style>
+text { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; fill: #24292f; }
+.heading { font-size: 20px; font-weight: 600; }
+.label { font-size: 13px; }
+.tick, .note { font-size: 11px; fill: #57606a; }
+.bar { fill: #40a865; }
+.axis { stroke: #d0d7de; }
+@media (prefers-color-scheme: dark) {
+  text { fill: #e6edf3; }
+  .tick, .note { fill: #a8b3bf; }
+  .axis { stroke: #484f58; }
+  .bar { fill: #40c463; }
+}
+</style>
+<text class="heading" x="24" y="30">Recent coding habits</text>
+<text class="note" x="24" y="52">@zhangzhiwei-zzw · Public push activity</text>
+<text class="label" x="24" y="78">30 public pushes in the last 30 days</text>
+<text class="label" x="24" y="108">By hour · Asia/Shanghai</text>
+<path class="axis" d="M40 190H480"/>
+<rect class="bar" x="43.21" y="190.00" width="11.92" height="0.00" rx="2"><title>00: 0 pushes</title></rect>
+<text class="tick" text-anchor="middle" x="49.17" y="207">00</text>
+<rect class="bar" x="61.54" y="190.00" width="11.92" height="0.00" rx="2"><title>01: 0 pushes</title></rect>
+<rect class="bar" x="79.88" y="190.00" width="11.92" height="0.00" rx="2"><title>02: 0 pushes</title></rect>
+<rect class="bar" x="98.21" y="190.00" width="11.92" height="0.00" rx="2"><title>03: 0 pushes</title></rect>
+<text class="tick" text-anchor="middle" x="104.17" y="207">03</text>
+<rect class="bar" x="116.54" y="190.00" width="11.92" height="0.00" rx="2"><title>04: 0 pushes</title></rect>
+<rect class="bar" x="134.87" y="190.00" width="11.92" height="0.00" rx="2"><title>05: 0 pushes</title></rect>
+<rect class="bar" x="153.21" y="190.00" width="11.92" height="0.00" rx="2"><title>06: 0 pushes</title></rect>
+<text class="tick" text-anchor="middle" x="159.17" y="207">06</text>
+<rect class="bar" x="171.54" y="190.00" width="11.92" height="0.00" rx="2"><title>07: 0 pushes</title></rect>
+<rect class="bar" x="189.87" y="190.00" width="11.92" height="0.00" rx="2"><title>08: 0 pushes</title></rect>
+<rect class="bar" x="208.21" y="168.00" width="11.92" height="22.00" rx="2"><title>09: 2 pushes</title></rect>
+<text class="tick" text-anchor="middle" x="214.17" y="207">09</text>
+<rect class="bar" x="226.54" y="179.00" width="11.92" height="11.00" rx="2"><title>10: 1 pushes</title></rect>
+<rect class="bar" x="244.87" y="146.00" width="11.92" height="44.00" rx="2"><title>11: 4 pushes</title></rect>
+<rect class="bar" x="263.21" y="168.00" width="11.92" height="22.00" rx="2"><title>12: 2 pushes</title></rect>
+<text class="tick" text-anchor="middle" x="269.17" y="207">12</text>
+<rect class="bar" x="281.54" y="190.00" width="11.92" height="0.00" rx="2"><title>13: 0 pushes</title></rect>
+<rect class="bar" x="299.88" y="190.00" width="11.92" height="0.00" rx="2"><title>14: 0 pushes</title></rect>
+<rect class="bar" x="318.21" y="168.00" width="11.92" height="22.00" rx="2"><title>15: 2 pushes</title></rect>
+<text class="tick" text-anchor="middle" x="324.17" y="207">15</text>
+<rect class="bar" x="336.54" y="179.00" width="11.92" height="11.00" rx="2"><title>16: 1 pushes</title></rect>
+<rect class="bar" x="354.88" y="168.00" width="11.92" height="22.00" rx="2"><title>17: 2 pushes</title></rect>
+<rect class="bar" x="373.21" y="179.00" width="11.92" height="11.00" rx="2"><title>18: 1 pushes</title></rect>
+<text class="tick" text-anchor="middle" x="379.17" y="207">18</text>
+<rect class="bar" x="391.54" y="168.00" width="11.92" height="22.00" rx="2"><title>19: 2 pushes</title></rect>
+<rect class="bar" x="409.88" y="179.00" width="11.92" height="11.00" rx="2"><title>20: 1 pushes</title></rect>
+<rect class="bar" x="428.21" y="179.00" width="11.92" height="11.00" rx="2"><title>21: 1 pushes</title></rect>
+<text class="tick" text-anchor="middle" x="434.17" y="207">21</text>
+<rect class="bar" x="446.54" y="124.00" width="11.92" height="66.00" rx="2"><title>22: 6 pushes</title></rect>
+<rect class="bar" x="464.88" y="135.00" width="11.92" height="55.00" rx="2"><title>23: 5 pushes</title></rect>
+<text class="label" x="24" y="240">By weekday</text>
+<path class="axis" d="M40 320H480"/>
+<rect class="bar" x="51.00" y="256.00" width="40.86" height="64.00" rx="2"><title>Mon: 11 pushes</title></rect>
+<text class="tick" text-anchor="middle" x="71.43" y="337">Mon</text>
+<rect class="bar" x="113.86" y="296.73" width="40.86" height="23.27" rx="2"><title>Tue: 4 pushes</title></rect>
+<text class="tick" text-anchor="middle" x="134.29" y="337">Tue</text>
+<rect class="bar" x="176.71" y="320.00" width="40.86" height="0.00" rx="2"><title>Wed: 0 pushes</title></rect>
+<text class="tick" text-anchor="middle" x="197.14" y="337">Wed</text>
+<rect class="bar" x="239.57" y="290.91" width="40.86" height="29.09" rx="2"><title>Thu: 5 pushes</title></rect>
+<text class="tick" text-anchor="middle" x="260.00" y="337">Thu</text>
+<rect class="bar" x="302.43" y="314.18" width="40.86" height="5.82" rx="2"><title>Fri: 1 pushes</title></rect>
+<text class="tick" text-anchor="middle" x="322.86" y="337">Fri</text>
+<rect class="bar" x="365.29" y="314.18" width="40.86" height="5.82" rx="2"><title>Sat: 1 pushes</title></rect>
+<text class="tick" text-anchor="middle" x="385.71" y="337">Sat</text>
+<rect class="bar" x="428.14" y="273.45" width="40.86" height="46.55" rx="2"><title>Sun: 8 pushes</title></rect>
+<text class="tick" text-anchor="middle" x="448.57" y="337">Sun</text>
+<text class="note" x="24" y="362">Sample: up to 300 recent public GitHub events</text>
+<text class="note" x="24" y="380">Updated 2026-10-25 · Push events, not commit counts</text>
 </svg>
