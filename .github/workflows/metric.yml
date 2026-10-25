@@ -118,13 +118,13 @@ jobs:
           plugin_stars: yes
           plugin_stars_limit: 10
           
-      # Use Metrics' official renderer with a narrowly scoped API compatibility patch.
+      # Use Metrics' official renderer with narrowly scoped API compatibility patches.
       - uses: actions/checkout@v6
         if: steps.credentials.outputs.metrics == 'true'
         with:
           ref: main
           persist-credentials: false
-      - name: Prepare compatible Metrics Habits image
+      - name: Prepare compatible Metrics image
         if: steps.credentials.outputs.metrics == 'true'
         run: docker build -t metrics:3.34.0 -f .github/metrics/Dockerfile .
       - name: Recent activity charts
@@ -132,6 +132,7 @@ jobs:
         uses: lowlighter/metrics@v3.34
         with:
           use_prebuilt_image: no
+          plugins_errors_fatal: yes
           filename: docs/github-metrics/habits.charts.svg
           token: ${{ secrets.METRICS_TOKEN }}
           base: ""
@@ -214,6 +215,8 @@ jobs:
         if: steps.credentials.outputs.metrics == 'true'
         uses: lowlighter/metrics@v3.34
         with:
+          use_prebuilt_image: no
+          plugins_errors_fatal: yes
           filename: docs/github-metrics/achievements.compact.svg
           token: ${{ secrets.METRICS_TOKEN }}
           base: ""
@@ -229,6 +232,8 @@ jobs:
         if: steps.credentials.outputs.metrics == 'true'
         uses: lowlighter/metrics@v3.34
         with:
+          use_prebuilt_image: no
+          plugins_errors_fatal: yes
           filename: docs/github-metrics/activity.svg
           token: ${{ secrets.METRICS_TOKEN }}
           base: ""
