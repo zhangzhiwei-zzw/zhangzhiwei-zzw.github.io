@@ -118,19 +118,6 @@ jobs:
           plugin_stars: yes
           plugin_stars_limit: 10
           
-      # 💡 Coding habits and activity
-      - name: Recent activity charts
-        if: steps.credentials.outputs.metrics == 'true'
-        uses: lowlighter/metrics@v3.34
-        with:
-          filename: docs/github-metrics/habits.charts.svg
-          token: ${{ secrets.METRICS_TOKEN }}
-          base: ""
-          plugin_habits: yes
-          plugin_habits_facts: no
-          plugin_habits_charts: yes
-          config_timezone: Asia/Shanghai
-          
       # 🎟️ Follow-up of issues and pull requests 
       - name: Indepth analysis
         if: steps.credentials.outputs.metrics == 'true'
@@ -239,3 +226,26 @@ jobs:
           plugin_wakatime: yes
           plugin_wakatime_sections: time, projects, projects-graphs, languages, languages-graphs, editors, os
           plugin_wakatime_token: ${{ secrets.WAKATIME_TOKEN }}
+
+  coding-habits:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v6
+        with:
+          ref: main
+      - uses: actions/setup-python@v6
+        with:
+          python-version: '3.12'
+      - name: Generate recent coding habits
+        env:
+          GITHUB_TOKEN: ${{ github.token }}
+          HABITS_USER: ${{ github.repository_owner }}
+        run: python scripts/generate_habits.py --user "$HABITS_USER" --output docs/github-metrics/habits.charts.svg
+      - name: Save coding habits
+        uses: EndBug/add-and-commit@v9
+        with:
+          add: docs/github-metrics/habits.charts.svg
+          default_author: github_actions
+          message: 'Update recent coding habits'

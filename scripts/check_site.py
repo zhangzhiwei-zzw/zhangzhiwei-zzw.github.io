@@ -4,6 +4,7 @@ import sys
 from html.parser import HTMLParser
 from pathlib import Path
 from urllib.parse import unquote, urlsplit
+import xml.etree.ElementTree as ET
 
 
 class AssetParser(HTMLParser):
@@ -28,6 +29,7 @@ def main():
         return 1
 
     missing = []
+    invalid_metrics = set()
     for page in pages:
         parser = AssetParser()
         parser.feed(page.read_text(encoding="utf-8"))
@@ -39,11 +41,21 @@ def main():
             target = root / path.lstrip("/") if path.startswith("/") else page.parent / path
             if not target.is_file():
                 missing.append(f"{page.relative_to(root)}: {asset}")
+            elif target.suffix == ".svg" and "github-metrics" in target.parts:
+                # Metrics can produce an error card while its action still succeeds.
+                svg = ET.parse(target)
+                for element in svg.iter():
+                    if {"field", "error"} <= set(element.get("class", "").split()):
+                        message = " ".join(" ".join(element.itertext()).split())
+                        invalid_metrics.add(f"{target.relative_to(root)}: {message}")
 
     for entry in missing:
         print(f"Missing asset: {entry}", file=sys.stderr)
-    print(f"Checked {len(pages)} HTML pages; {len(missing)} missing local assets.")
-    return int(bool(missing))
+    for entry in sorted(invalid_metrics):
+        print(f"Invalid metric card: {entry}", file=sys.stderr)
+    print(f"Checked {len(pages)} HTML pages; {len(missing)} missing local assets; "
+          f"{len(invalid_metrics)} invalid metric cards.")
+    return int(bool(missing or invalid_metrics))
 
 
 if __name__ == "__main__":
