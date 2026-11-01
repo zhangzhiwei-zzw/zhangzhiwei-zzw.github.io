@@ -1,0 +1,4 @@
+/* Keep the social links and copyright, hide only previous/next navigation. */
+.md-footer__inner {
+  display: none;
+}
